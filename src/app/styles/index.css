@@ -1,0 +1,96 @@
+:root {
+    --color-purple: #5d62ac;
+    --color-blue: #213063;
+    --color-light-lavender: #ddc1da;
+    --color-beige: #eee1e1;
+    --color-light-blue: #709fd4;
+    --color-pink: #daa7cd;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Komet';
+    src: url("@/shared/assets/fonts/Komet/Komet_Heavy.otf") format("opentype"); /*./../../shared/assets/fonts/Komet/Komet_Heavy.otf*/
+    font-weight: 1000;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url("@/shared/assets/fonts/Komet/Komet_Bold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url("@/shared/assets/fonts/Komet/Komet_Medium.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url("@/shared/assets/fonts/Komet/Komet_Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Komet';
+    src: url("@/shared/assets/fonts/Komet/Komet_Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Black.otf") format("opentype");
+    font-weight: 1000;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Bold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Medium.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PF_Marlet_Display';
+    src: url("@/shared/assets/fonts/PF-Marlet-Display/PF_Marlet_Display_Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,139 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-purple);
+}
+
+.contentContainer {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.languageSwitcher {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.section {
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-purple);
+    color: var(--color-beige);
+}
+
+.footer p {
+    font-family: PF_Marlet_Display;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+
+.socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 25px;
+    top: 50px;
+    left: 5px;
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 800;
+    font-size: 24px;
+    align-items: center;
+    width: 40px;
+}
+
+.instagramNickName p {
+    transform: rotate(-90deg);
+    margin-top: 38px;
+}
+
+.instagramNickName > p:first-child {
+    font-family: PF_Marlet_Display;
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 0px;
+}
+
+.homeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.homeScreenContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.homeScreenButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.homeScreenButtons button {
+    all: initial;
+    width: 143px;
+    height: 42px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--color-blue);
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.homeScreenButtons > button:first-child{
+    font-family: PF_Marlet_Display;
+    font-weight: 200;
+    font-size: 24px;
+    background-color: var(--color-light-lavender);
+    color: var(--color-blue);
+}
+
+.navigationBoard {
+    background-color: var(--color-blue);
+    height: 72px;
+    width: 90%;
+    border-radius: 4px;
+    margin: 0 auto;
+    position: sticky;
+    top: 20px;
+}
+
+.whatDoIOffer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraphSomeText {
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.myOffers {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+}
+
+
