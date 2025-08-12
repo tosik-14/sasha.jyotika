@@ -112,6 +112,49 @@
     margin: 0 auto;
     position: sticky;
     top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationBoard > img:first-child {
+    position: absolute;
+    /*top: -135px;
+    left: -50px;*/
+    top: -120px;
+    left: -25px;
+}
+
+.navigationBoard > img:last-child {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+}
+
+.navigationBoardTitle {
+    font-family: PF_Marlet_Display;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--color-beige);
+}
+
+.navigationBoardButtons {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 40px;
+    z-index: 11;
+    display: flex;
+    gap: 41px;
+}
+
+.navigationBoardButtons > button:first-child, .navigationBoardButtons > button:last-child {
+    all: initial;
+    font-family: Komet;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--color-blue);
 }
 
 .whatDoIOffer {

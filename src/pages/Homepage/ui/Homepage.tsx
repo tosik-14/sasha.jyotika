@@ -2,9 +2,11 @@ import styles from "@/pages/Homepage/ui/Homepage.module.css"
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from "@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher";
 import { Icon } from "@/shared/ui/icons/Icon"
+import {useHomepage} from "@/pages/Homepage/hook/useHomepage";
 
 export const Homepage = () => {
     const { t } = useTranslation();
+    const { title, scrollToSection } = useHomepage();
 
     return (
         <div className={styles.container}>
@@ -25,8 +27,8 @@ export const Homepage = () => {
                             <Icon name={"logoHomeScreen"} size={[586, 549]} />
 
                             <div className={styles.homeScreenButtons}>
-                                <button>{t("explore")}</button>
-                                <button>{t("contact")}</button>
+                                <button onClick={() => {scrollToSection("services")}}>{t("explore")}</button>
+                                <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
                             </div>
                         </div>
 
@@ -35,6 +37,14 @@ export const Homepage = () => {
                 </section>
 
                 <div className={styles.navigationBoard}>
+                    <Icon name={"navigationBarLogo1"} size={310}></Icon>
+                        <p className={styles.navigationBoardTitle}>{title}</p>
+                        <span className={styles.navigationBoardButtons}>
+                            <button onClick={() => {scrollToSection("aboutMe")}}>About</button>
+                            <button onClick={() => {scrollToSection("contactMe")}}>Contact</button>
+                        </span>
+
+                    <Icon name={"moon2"} size={[582, 396]}></Icon>
 
                 </div>
 
@@ -57,11 +67,15 @@ export const Homepage = () => {
 
                 </section>
 
-                <section id="services" className={styles.section}>
-                    <h1>Who am I</h1>
+                <section id="aboutMe" className={styles.section}>
+                    <div className={styles.contentContainer}>
+                        <div className={styles.contentContainer}>
+
+                        </div>
+                    </div>
                 </section>
 
-                <section id="services" className={styles.section}>
+                <section id="contactMe" className={styles.section}>
                     <h1>Contact</h1>
                 </section>
 

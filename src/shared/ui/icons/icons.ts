@@ -3,6 +3,8 @@ import telegram from '@/shared/assets/icons/telegram.svg';
 import instagram from '@/shared/assets/icons/instagram.svg';
 import facebook from '@/shared/assets/icons/facebook.svg';
 import logoHomeScreen from '@/shared/assets/images/logo_homeScreen.jpg';
+import navigationBarLogo from '@/shared/assets/images/navigationBarLogo.png';
+import navigationBarLogo1 from '@/shared/assets/images/navigationBarLogo1.png';
 import astro from '@/shared/assets/images/astro.jpg';
 import tarot from '@/shared/assets/images/tarot.png';
 import aroma from '@/shared/assets/images/aroma.png';
@@ -20,6 +22,8 @@ export const iconMap = {
     instagram,
     facebook,
     logoHomeScreen,
+    navigationBarLogo,
+    navigationBarLogo1,
     astro,
     tarot,
     aroma,
