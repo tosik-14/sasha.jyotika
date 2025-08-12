@@ -5,6 +5,8 @@
     --color-beige: #eee1e1;
     --color-light-blue: #709fd4;
     --color-pink: #daa7cd;
+    --offersCover: rgba(238, 225, 225, 0.71);
+    --offersCoverTransparent: rgba(238, 225, 225, 0);
 }
 
 html, body {

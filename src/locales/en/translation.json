@@ -1,6 +1,7 @@
 {
   "explore": "Explore",
   "contact": "Contact",
+  "aboutMe": "About",
   "whatDoIOffer": "What do I offer?",
   "whoAmI": "Who am I?",
   "letsConnect": "Let's Connect!",
@@ -9,5 +10,9 @@
   "aboutMeDetail-1": "I’m a trained psychotherapist and certified astrology & tarot practitioner with over a decade of experience in personal transformation work and leadership.",
   "aboutMeDetail-2": "After years in corporate leadership nourishing talents and teams, I chose to follow my calling: helping others align with their deeper truth and purpose.",
   "aboutMeDetail-3": "This practice is where intuitive knowing meets grounded strategy.",
-  "lestConnectPhrase": "Stay updated on sessions, events, and insights, or reach out with any questions."
+  "lestConnectPhrase": "Stay updated on sessions, events, and insights, or reach out with any questions.",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send"
 }

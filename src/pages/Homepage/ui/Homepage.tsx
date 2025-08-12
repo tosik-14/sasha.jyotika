@@ -24,7 +24,7 @@ export const Homepage = () => {
                             <Icon name={"logoHomeScreen"} size={[586, 549]} />
 
                             <div className={styles.homeScreenButtons}>
-                                <button onClick={() => {scrollToSection("services")}}>{t("explore")}</button>
+                                <button onClick={() => {scrollToSection("servicesForNavigation")}}>{t("explore")}</button>
                                 <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
                             </div>
                         </div>
@@ -33,17 +33,19 @@ export const Homepage = () => {
 
                 </section>
 
-                <div className={styles.navigationBoard}>
+                <div className={styles.navigationBoard} id="servicesForNavigation">
                     <Icon name={"navigationBarLogo1"} size={310}></Icon>
                         <p className={styles.navigationBoardTitle}>{title}</p>
                         <span className={styles.navigationBoardButtons}>
-                            <button onClick={() => {scrollToSection("aboutMe")}}>About</button>
-                            <button onClick={() => {scrollToSection("contactMe")}}>Contact</button>
+                            <button onClick={() => {scrollToSection("aboutMeForNavigation")}}>{t("aboutMe")}</button>
+                            <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
                         </span>
 
-                    <Icon name={"moon2"} size={[582, 396]}></Icon>
+                    <Icon name={"moon2"} size={[622, 425]}></Icon>{/*[582, 396]*/}
 
                 </div>
+
+                {/*<section id="servicesForNavigation" className={styles.section}></section>*/}
 
                 <section id="services" className={styles.section}>
 
@@ -51,16 +53,52 @@ export const Homepage = () => {
                         <p className={styles.paragraphSomeText}>{t("whatDoIOdderShortDecr")}</p>
                         <div>
                             <div className={styles.myOffers}>
-                                <Icon name={"astro"} size={[246, 316]} style={{borderRadius: 25}} />
-                                <Icon name={"tarot"} size={[246, 316]} style={{borderRadius: 25}} />
-                                <Icon name={"aroma"} size={[246, 316]} style={{borderRadius: 25}} />
-                                <Icon name={"events"} size={[246, 316]} style={{borderRadius: 25}} />
+
+                                <button className={styles.offerCard}>
+                                    <Icon name={"astro"} size={[246, 316]} style={{borderRadius: 25}} />
+                                    <div className={styles.offerCardCover}>
+                                        <span>
+                                            <label>Vedic</label>
+                                            <label>Astrology</label>
+                                        </span>
+                                    </div>
+                                </button>
+
+                                <button className={styles.offerCard}>
+                                    <Icon name={"tarot"} size={[246, 316]} style={{borderRadius: 25}} />
+                                    <div className={styles.offerCardCover}>
+                                        <span>
+                                            <label>Tarot</label>
+                                        </span>
+                                    </div>
+                                </button>
+
+                                <button className={styles.offerCard}>
+                                    <Icon name={"aroma"} size={[246, 316]} style={{borderRadius: 25}} />
+                                    <div className={styles.offerCardCover}>
+                                        <span>
+                                            <label>Aroma</label>
+                                            <label>diagnostics</label>
+                                        </span>
+                                    </div>
+                                </button>
+
+                                <button className={styles.offerCard}>
+                                    <Icon name={"events"} size={[246, 316]} style={{borderRadius: 25}} />
+                                    <div className={styles.offerCardCover}>
+                                        <span>
+                                            <label>Events</label>
+                                        </span>
+                                    </div>
+                                </button>
+
                             </div>
                         </div>
                     </div>
 
-
                 </section>
+
+                <section id="aboutMeForNavigation" className={styles.section}></section>
 
                 <section id="aboutMe" className={styles.section}>
                     <div className={styles.contentContainer}>
@@ -88,12 +126,37 @@ export const Homepage = () => {
                         <p className={styles.paragraphSomeText}>{t("lestConnectPhrase")}</p>
                         <div className={styles.connectBlock}>
                             <Icon name={"sashaConnect"} size={[342, 439]}/>
+
+                            <form className={styles.connectForm} onSubmit={(e) => {e.preventDefault();}}>
+                                <div className={styles.inputGroup}>
+                                    <input type="text" name="name" required />
+                                    <label>{t("name")}</label>
+                                </div>
+                                <div className={styles.inputGroup}>
+                                    <input type="text" name="email" required />
+                                    <label>{t("email")}</label>
+                                </div>
+                                <div className={styles.inputGroupTextarea}>
+                                    <textarea className={styles.messageTextarea} name="message" required ></textarea>
+                                    <label>{t("message")}</label>
+                                </div>
+
+                                <span className={styles.sendButtonAndLinks}>
+                                    <button type="submit">{t("send")}</button>
+                                    <SocialMediaLinks />
+                                </span>
+
+                            </form>
+
                         </div>
                     </div>
                 </section>
 
                 <footer className={styles.footer}>
-                    <p>© A Star Consulting</p>
+                    <div className={styles.footerContent}>
+                        <p>© A Star Consulting</p>
+                    </div>
+
                 </footer>
 
             </div>
