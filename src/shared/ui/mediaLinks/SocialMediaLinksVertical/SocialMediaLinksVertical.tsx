@@ -11,10 +11,10 @@ export const SocialMediaLinksVertical = () => {
               <a href="https://www.instagram.com/sasha.jyotika/" target="_blank" rel="noopener noreferrer">
                   <Icon name={"instagram"} size={30}/>
               </a>
-              <a href="https://www.instagram.com/sasha.jyotika/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61575674236195" target="_blank" rel="noopener noreferrer">
                   <Icon name={"facebook"} size={30}/>
               </a>
-              <a href="https://web.telegram.org/a/#104053750" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/alexandramikh" target="_blank" rel="noopener noreferrer">
                   <Icon name={"telegram"} size={30}/>
               </a>
           </div>
