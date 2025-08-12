@@ -15,10 +15,10 @@
 
 .paragraphSomeText {
     color: var(--color-beige);
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 24px;
-    margin: 0px;
+    margin: 0;
 }
 
 .connectForm {
@@ -35,7 +35,7 @@
     border: 1px solid var(--color-blue);
     border-radius: 10px;
     height: 48px;
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 24px;
     color: var(--color-beige);
@@ -45,7 +45,7 @@
 
 .connectForm input:-webkit-autofill,
 .connectForm textarea:-webkit-autofill {
-    box-shadow: 0 0 0px 1000px /*transparent*/var(--color-purple) inset !important;
+    box-shadow: 0 0 0 1000px /*transparent*/var(--color-purple) inset !important;
     -webkit-text-fill-color: var(--color-beige) !important;
     font-family: Komet, sans-serif !important;
     font-size: 24px !important;
@@ -90,7 +90,7 @@
     width: 100%;
     height: 99%;
     background-color: transparent;
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 24px;
     color: var(--color-beige);
@@ -105,7 +105,7 @@
     height: 42px;
     background-color: var(--color-light-lavender);
     border-radius: 4px;
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 24px;
     text-align: center;
@@ -117,7 +117,7 @@
 
 .inputGroup label {
     color: var(--color-beige);
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 16px;
     background-color: var(--color-purple);
@@ -129,7 +129,7 @@
 
 .inputGroupTextarea label {
     color: var(--color-beige);
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 16px;
     background-color: var(--color-purple);

@@ -7,6 +7,8 @@
     --color-pink: #daa7cd;
     --offersCover: rgba(238, 225, 225, 0.71);
     --offersCoverTransparent: rgba(238, 225, 225, 0);
+    --font-primary: 'Komet', sans-serif;
+    --font-secondary: 'PF_Marlet_Display', sans-serif;
 }
 
 html, body {

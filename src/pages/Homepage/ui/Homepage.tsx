@@ -42,35 +42,27 @@ export const Homepage = () => {
                             <button onClick={() => {scrollToSection("aboutMeForNavigation")}}>{t("aboutMe")}</button>
                             <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
                         </span>
-
                     <Icon name={"moon2"} size={[622, 425]}></Icon>{/*[582, 396]*/}
-
                 </div>
 
                 <section id="services" className={styles.section}>
-
                     <WhatDoIOffer />
-
                 </section>
 
                 <section id="aboutMeForNavigation" className={styles.section}></section>
 
                 <section id="aboutMe" className={styles.section}>
-                    <div className={styles.contentContainer}>
-                        <AboutMe />
-                    </div>
+                    <AboutMe />
                 </section>
 
                 <section id="contactMe" className={styles.section}>
                     <LetsConnect />
-
                 </section>
 
                 <footer className={styles.footer}>
                     <div className={styles.footerContent}>
                         <p>© A Star Consulting</p>
                     </div>
-
                 </footer>
 
             </div>

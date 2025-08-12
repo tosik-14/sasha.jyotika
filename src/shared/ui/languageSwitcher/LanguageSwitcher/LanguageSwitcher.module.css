@@ -33,7 +33,7 @@
     background-color: var(--color-beige);
     border: none;
     cursor: pointer;
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 600;
     font-size: 16px;
 }

@@ -17,14 +17,14 @@
     transform: rotate(-90deg);
     margin-top: 38px;
     color: var(--color-beige);
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 800;
     font-size: 24px;
 }
 
 .instagramNickName > p:first-child {
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 600;
     font-size: 24px;
-    margin-right: 0px;
+    margin-right: 0;
 }

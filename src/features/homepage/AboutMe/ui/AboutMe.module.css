@@ -14,7 +14,7 @@
 
 .aboutMeGeneral {
     margin: 0;
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 600;
     font-size: 24px;
     color: var(--color-beige);
@@ -28,7 +28,7 @@
 
 .aboutMeDetail {
     margin: 0;
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 24px;
     color: var(--color-beige);

@@ -28,7 +28,7 @@
 }
 
 .footer p {
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 200;
     font-size: 24px;
 }
@@ -63,13 +63,13 @@
     border-radius: 4px;
     background-color: var(--color-blue);
     color: var(--color-beige);
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 600;
     font-size: 24px;
 }
 
 .homeScreenButtons > button:first-child{
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 200;
     font-size: 24px;
     background-color: var(--color-light-lavender);
@@ -106,7 +106,7 @@
 }
 
 .navigationBoardTitle {
-    font-family: PF_Marlet_Display;
+    font-family: var(--font-secondary);
     font-weight: 800;
     font-size: 32px;
     color: var(--color-beige);
@@ -124,7 +124,7 @@
 
 .navigationBoardButtons > button:first-child, .navigationBoardButtons > button:last-child {
     all: initial;
-    font-family: Komet;
+    font-family: var(--font-primary);
     font-weight: 800;
     font-size: 24px;
     color: var(--color-blue);
