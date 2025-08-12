@@ -1,0 +1,148 @@
+.connectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    width: 90%;
+    margin: 200px auto 0 auto;
+}
+
+.connectBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+}
+
+.paragraphSomeText {
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.connectForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 532px;
+}
+
+.connectForm input {
+    all: initial;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-blue);
+    border-radius: 10px;
+    height: 48px;
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-beige);
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.connectForm input:-webkit-autofill,
+.connectForm textarea:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px /*transparent*/var(--color-purple) inset !important;
+    -webkit-text-fill-color: var(--color-beige) !important;
+    font-family: Komet, sans-serif !important;
+    font-size: 24px !important;
+}
+
+
+.connectForm .messageTextarea {
+    height: 240px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.messageTextarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.messageTextarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.messageTextarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-beige);
+    border-radius: 4px;
+}
+
+.messageTextarea::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-light-lavender);
+}
+
+.inputGroupTextarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid var(--color-blue);
+    border-radius: 10px;
+}
+
+.inputGroupTextarea textarea{
+    all: initial;
+    width: 100%;
+    height: 99%;
+    background-color: transparent;
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-beige);
+    padding: 0 9px 9px 12px;
+    margin: 12px 3px 3px 0;
+    box-sizing: border-box;
+}
+
+.connectForm button {
+    all: initial;
+    width: 143px;
+    height: 42px;
+    background-color: var(--color-light-lavender);
+    border-radius: 4px;
+    font-family: PF_Marlet_Display;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.inputGroup{
+    position: relative;
+}
+
+.inputGroup label {
+    color: var(--color-beige);
+    font-family: PF_Marlet_Display;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--color-purple);
+    padding: 0 7px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+.inputGroupTextarea label {
+    color: var(--color-beige);
+    font-family: PF_Marlet_Display;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--color-purple);
+    padding: 0 7px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+
+.sendButtonAndLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

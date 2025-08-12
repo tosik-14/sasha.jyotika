@@ -1,0 +1,76 @@
+.whatDoIOffer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraphSomeText {
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.myOffers {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+}
+
+.offerCard {
+    margin: 0;
+    all: initial;
+    position: relative;
+    font-family: PF_Marlet_Display;
+    font-weight: 100;
+    font-size: 48px;
+    color: var(--color-blue);
+    /*display: inline-block; */
+    line-height: 0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.offerCard img{
+    transition: transform 0.5s ease;
+}
+
+.offerCardCover {
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    background-color: var(--offersCoverTransparent);
+    opacity: 0;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+.offerCard span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.offerCard label {
+    display: none;
+}
+
+.offerCard:hover img {
+    transform: scale(1.3);
+}
+
+.offerCard:hover label {
+    display: flex;
+}
+
+.offerCard:hover .offerCardCover{
+    background-color: var(--offersCover);
+    opacity: 1;
+}

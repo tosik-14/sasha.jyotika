@@ -1,0 +1,35 @@
+.aboutMeContent{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    width: 90%;
+    margin: 200px auto 0 auto;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutMeGeneral {
+    margin: 0;
+    font-family: Komet;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
+.aboutMeDetailText {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.aboutMeDetail {
+    margin: 0;
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-beige);
+}
