@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from "@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher";
 import { Icon } from "@/shared/ui/icons/Icon"
 import {useHomepage} from "@/pages/Homepage/hook/useHomepage";
+import {SocialMediaLinks} from "@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks";
+import {SocialMediaLinksVertical} from "@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical";
 
 export const Homepage = () => {
     const { t } = useTranslation();
@@ -10,12 +12,7 @@ export const Homepage = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.socialMediaLinks}>
-                <span className={styles.instagramNickName}><p>jyotika</p><p>sasha.</p></span>
-                <Icon name={"instagram"} size={30}/>
-                <Icon name={"facebook"} size={30}/>
-                <Icon name={"telegram"} size={30}/>
-            </div>
+            <SocialMediaLinksVertical />
 
             <div className={styles.languageSwitcher}><LanguageSwitcher/></div>
 
@@ -51,9 +48,7 @@ export const Homepage = () => {
                 <section id="services" className={styles.section}>
 
                     <div className={styles.whatDoIOffer}>
-                        <p className={styles.paragraphSomeText}>
-                            Helping find Clarity. Insight. Empowerment. through defining moments.
-                        </p>
+                        <p className={styles.paragraphSomeText}>{t("whatDoIOdderShortDecr")}</p>
                         <div>
                             <div className={styles.myOffers}>
                                 <Icon name={"astro"} size={[246, 316]} style={{borderRadius: 25}} />
@@ -69,14 +64,32 @@ export const Homepage = () => {
 
                 <section id="aboutMe" className={styles.section}>
                     <div className={styles.contentContainer}>
-                        <div className={styles.contentContainer}>
+                        <div className={styles.aboutMeContent}>
+                            <Icon name={"sashaAboutMe"} size={[414, 532]}/>
+
+                            <div className={styles.aboutMeText}>
+                                <p className={styles.aboutMeGeneral}>{t("aboutMeGeneral")}</p>
+
+                                <span className={styles.aboutMeDetailText}>
+                                    <p className={styles.aboutMeDetail}>{t("aboutMeDetail-1")}</p>
+                                    <p className={styles.aboutMeDetail}>{t("aboutMeDetail-2")}</p>
+                                    <p className={styles.aboutMeDetail}>{t("aboutMeDetail-3")}</p>
+                                </span>
+
+                                <SocialMediaLinks/>
+                            </div>
 
                         </div>
                     </div>
                 </section>
 
                 <section id="contactMe" className={styles.section}>
-                    <h1>Contact</h1>
+                    <div className={styles.connectContent}>
+                        <p className={styles.paragraphSomeText}>{t("lestConnectPhrase")}</p>
+                        <div className={styles.connectBlock}>
+                            <Icon name={"sashaConnect"} size={[342, 439]}/>
+                        </div>
+                    </div>
                 </section>
 
                 <footer className={styles.footer}>

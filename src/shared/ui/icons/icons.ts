@@ -14,7 +14,8 @@ import moon2 from '@/shared/assets/patterns/moon2.png';
 import moon3 from '@/shared/assets/patterns/moon3.png';
 import moon4 from '@/shared/assets/patterns/moon4.png';
 import moon6 from '@/shared/assets/patterns/moon6.png';
-import sashaFirst from '@/shared/assets/images/sasha_first.png';
+import sashaAboutMe from '@/shared/assets/images/sasha_first.png';
+import sashaConnect from '@/shared/assets/images/sasha_second.png';
 
 
 export const iconMap = {
@@ -34,7 +35,8 @@ export const iconMap = {
     moon3,
     moon4,
     moon6,
-    sashaFirst,
+    sashaAboutMe,
+    sashaConnect,
 } as const;
 
 export type IconName = keyof typeof iconMap;

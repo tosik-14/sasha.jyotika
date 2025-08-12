@@ -34,34 +34,6 @@
     font-size: 24px;
 }
 
-
-.socialMediaLinks {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    gap: 25px;
-    top: 50px;
-    left: 5px;
-    color: var(--color-beige);
-    font-family: Komet;
-    font-weight: 800;
-    font-size: 24px;
-    align-items: center;
-    width: 40px;
-}
-
-.instagramNickName p {
-    transform: rotate(-90deg);
-    margin-top: 38px;
-}
-
-.instagramNickName > p:first-child {
-    font-family: PF_Marlet_Display;
-    font-weight: 600;
-    font-size: 24px;
-    margin-right: 0px;
-}
-
 .homeScreen {
     display: flex;
     justify-content: center;
@@ -178,5 +150,60 @@
     flex-direction: row;
     gap: 38px;
 }
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||ABOUT ME|||||||||||||||||||||||||||||||||||||||||||||\*/
+.aboutMeContent{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutMeGeneral {
+    margin: 0;
+    font-family: Komet;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
+.aboutMeDetailText {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.aboutMeDetail {
+    margin: 0;
+    font-family: Komet;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||LETS CONNECT|||||||||||||||||||||||||||||||||||||||||||||\*/
+.connectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.connectBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+}
+
 
 
