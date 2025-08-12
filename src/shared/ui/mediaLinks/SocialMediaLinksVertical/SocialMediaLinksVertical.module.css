@@ -1,0 +1,30 @@
+.socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 25px;
+    top: 50px;
+    left: 5px;
+    align-items: center;
+    width: 40px;
+}
+
+.socialMediaLinks a {
+    text-decoration: none;
+}
+
+.instagramNickName p {
+    transform: rotate(-90deg);
+    margin-top: 38px;
+    color: var(--color-beige);
+    font-family: Komet;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.instagramNickName > p:first-child {
+    font-family: PF_Marlet_Display;
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 0px;
+}

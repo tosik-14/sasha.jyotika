@@ -1,0 +1,21 @@
+import styles from '@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks.module.css'
+import {Icon} from "@/shared/ui/icons/Icon";
+
+export const SocialMediaLinks = () => { //https://www.instagram.com/sasha.jyotika/
+    return (
+        <div className={styles.container}>
+            <a href="@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks#104053750" target="_blank" rel="noopener noreferrer">
+                <Icon name={"telegram"} size={30} />
+            </a>
+            <a href="@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks" target="_blank" rel="noopener noreferrer">
+                <Icon name={"facebook"} size={30} />
+            </a>
+            <a href="@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks" target="_blank" rel="noopener noreferrer">
+                <Icon name={"instagram"} size={30} />
+            </a>
+            <a href="@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks" target="_blank" rel="noopener noreferrer">
+                <span className={styles.instagramNickName}><p>sasha.</p><p>jyotika</p></span>
+            </a>
+        </div>
+    )
+}

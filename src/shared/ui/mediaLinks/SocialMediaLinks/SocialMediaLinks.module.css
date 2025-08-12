@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.instagramNickName {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-beige);
+    font-family: PF_Marlet_Display;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.instagramNickName p {
+    margin: 0;
+}
+
+.instagramNickName > p:first-child {
+    font-family: Komet;
+    font-weight: 800;
+    font-size: 24px;
+    margin-right: 0px;
+}
