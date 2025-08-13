@@ -17,6 +17,7 @@
 }
 
 .section {
+    position: relative;
 }
 
 .footer {
@@ -36,6 +37,59 @@
     margin-top: 150px;
     text-align: center;
 }
+
+
+
+
+.moonPattern1 {
+    position: absolute;
+    top: -20%;
+    left: -25%;
+    z-index: 0;
+}
+
+.moonPattern2 {
+    position: absolute;
+    top: 30%;
+    right: -30%;
+    z-index: 0;
+}
+
+.moonPattern3 {
+    position: absolute;
+    top: -20%;
+    left: -25%;
+    z-index: 0;
+}
+
+.moonPattern4 {
+    position: absolute;
+    top: 30%;
+    right: -40%;
+    z-index: 0;
+}
+
+.moonPattern5 {
+    position: absolute;
+    bottom: 30%;
+    left: -30%;
+    z-index: 0;
+}
+
+.moonPattern6 {
+    position: absolute;
+    top: 0;
+    right: -40%;
+    z-index: 0;
+}
+
+.moonPattern7 {
+    position: absolute;
+    bottom: -45%;
+    right: -25%;
+    z-index: 0;
+}
+
 
 
 

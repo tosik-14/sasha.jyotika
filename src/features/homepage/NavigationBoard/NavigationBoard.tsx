@@ -18,7 +18,7 @@ export const NavigationBoard = ({title} : titleProps) => {
                             <button onClick={() => {scrollToElement("aboutMeForNavigation")}}>{t("aboutMe")}</button>
                             <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
                         </span>
-            <Icon name={"moon2"} size={[622, 425]}></Icon>{/*[582, 396]*/}
+            <Icon name={"moon2"} size={350}></Icon>{/*[582, 396]*/}
         </div>
     );
 }

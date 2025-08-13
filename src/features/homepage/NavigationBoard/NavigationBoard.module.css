@@ -23,8 +23,8 @@
 
 .navigationBoard > img:last-child {
     position: absolute;
-    top: -180px;/*top: -150px;*/
-    right: -150px;
+    top: -140px;/*top: -150px;*/
+    right: 0px;
 }
 
 .navigationBoardTitle {
