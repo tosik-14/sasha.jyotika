@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 export function useHomepage () {
     const { t } = useTranslation();
-    const [title, setTitle] = useState(t("whatDoIOffer"));
+    const [title, setTitle] = useState<string>(t("whatDoIOffer"));
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");

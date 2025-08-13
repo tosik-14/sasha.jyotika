@@ -17,8 +17,6 @@
 }
 
 .section {
-
-    /*padding-top: 100px;*/
 }
 
 .footer {
@@ -32,104 +30,6 @@
     font-weight: 200;
     font-size: 24px;
 }
-
-.homeScreen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    min-height: 100vh;
-}
-
-.homeScreenContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
-.homeScreenButtons {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-.homeScreenButtons button {
-    all: initial;
-    width: 143px;
-    height: 42px;
-    text-align: center;
-    border-radius: 4px;
-    background-color: var(--color-blue);
-    color: var(--color-beige);
-    font-family: var(--font-primary);
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.homeScreenButtons > button:first-child{
-    font-family: var(--font-secondary);
-    font-weight: 200;
-    font-size: 24px;
-    background-color: var(--color-light-lavender);
-    color: var(--color-blue);
-}
-
-.navigationBoard {
-    background-color: var(--color-blue);
-    height: 72px;
-    width: 90%;
-    border-radius: 4px;
-    margin: 0 auto;
-    position: sticky;
-    top: 20px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-
-.navigationBoard > img:first-child {
-    position: absolute;
-    /*top: -135px;
-    left: -50px;*/
-    top: -120px;
-    left: -25px;
-}
-
-.navigationBoard > img:last-child {
-    position: absolute;
-    top: -180px;/*top: -150px;*/
-    right: -150px;
-}
-
-.navigationBoardTitle {
-    font-family: var(--font-secondary);
-    font-weight: 800;
-    font-size: 32px;
-    color: var(--color-beige);
-}
-
-.navigationBoardButtons {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 40px;
-    z-index: 101;
-    display: flex;
-    gap: 41px;
-}
-
-.navigationBoardButtons > button:first-child, .navigationBoardButtons > button:last-child {
-    all: initial;
-    font-family: var(--font-primary);
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--color-blue);
-}
-
 
 
 .footerContent {

@@ -1,13 +1,14 @@
 import styles from "@/pages/Homepage/ui/Homepage.module.css"
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from "@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher";
-import { Icon } from "@/shared/ui/icons/Icon"
 import {useHomepage} from "@/pages/Homepage/hook/useHomepage";
 import {SocialMediaLinksVertical} from "@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical";
+import {HomeScreen} from "@/features/homepage/HomeScreen/ui/HomeScreen";
 import {WhatDoIOffer} from "@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer";
 import {AboutMe} from "@/features/homepage/AboutMe/ui/AboutMe";
 import {LetsConnect} from "@/features/homepage/LetsConnect/ui/LetsConnect";
-import {scrollToElement} from "@/shared/lib/scrollToElement";
+import {NavigationBoard} from "@/features/homepage/NavigationBoard/NavigationBoard";
+
 
 export const Homepage = () => {
     const { t } = useTranslation();
@@ -21,30 +22,11 @@ export const Homepage = () => {
 
             <div className={styles.contentContainer}>
                 <section id="home" className={styles.section}>
-
-                    <div className={styles.homeScreen}>
-                        <div className={styles.homeScreenContent}>
-                            <Icon name={"logoHomeScreen"} size={[586, 549]} />
-
-                            <div className={styles.homeScreenButtons}>
-                                <button onClick={() => {scrollToElement("servicesForNavigation")}}>{t("explore")}</button>
-                                <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
-                            </div>
-                        </div>
-
-                    </div>
-
+                    <HomeScreen />
                 </section>
 
-                <div className={styles.navigationBoard} id="servicesForNavigation">
-                    <Icon name={"navigationBarLogo1"} size={310}></Icon>
-                        <p className={styles.navigationBoardTitle}>{title}</p>
-                        <span className={styles.navigationBoardButtons}>
-                            <button onClick={() => {scrollToElement("aboutMeForNavigation")}}>{t("aboutMe")}</button>
-                            <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
-                        </span>
-                    <Icon name={"moon2"} size={[622, 425]}></Icon>{/*[582, 396]*/}
-                </div>
+                <span id="servicesForNavigation"></span>
+                <NavigationBoard title={title} />
 
                 <section id="services" className={styles.section}>
                     <WhatDoIOffer />

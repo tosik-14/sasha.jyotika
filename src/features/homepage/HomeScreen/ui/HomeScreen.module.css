@@ -1,0 +1,42 @@
+.homeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+}
+
+.homeScreenContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.homeScreenButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.homeScreenButtons button {
+    all: initial;
+    width: 143px;
+    height: 42px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--color-blue);
+    color: var(--color-beige);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.homeScreenButtons > button:first-child{
+    font-family: var(--font-secondary);
+    font-weight: 200;
+    font-size: 24px;
+    background-color: var(--color-light-lavender);
+    color: var(--color-blue);
+}
