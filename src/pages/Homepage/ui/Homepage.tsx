@@ -7,10 +7,11 @@ import {SocialMediaLinksVertical} from "@/shared/ui/mediaLinks/SocialMediaLinksV
 import {WhatDoIOffer} from "@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer";
 import {AboutMe} from "@/features/homepage/AboutMe/ui/AboutMe";
 import {LetsConnect} from "@/features/homepage/LetsConnect/ui/LetsConnect";
+import {scrollToElement} from "@/shared/lib/scrollToElement";
 
 export const Homepage = () => {
     const { t } = useTranslation();
-    const { title, scrollToSection } = useHomepage();
+    const { title } = useHomepage();
 
     return (
         <div className={styles.container}>
@@ -26,8 +27,8 @@ export const Homepage = () => {
                             <Icon name={"logoHomeScreen"} size={[586, 549]} />
 
                             <div className={styles.homeScreenButtons}>
-                                <button onClick={() => {scrollToSection("servicesForNavigation")}}>{t("explore")}</button>
-                                <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
+                                <button onClick={() => {scrollToElement("servicesForNavigation")}}>{t("explore")}</button>
+                                <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
                             </div>
                         </div>
 
@@ -39,8 +40,8 @@ export const Homepage = () => {
                     <Icon name={"navigationBarLogo1"} size={310}></Icon>
                         <p className={styles.navigationBoardTitle}>{title}</p>
                         <span className={styles.navigationBoardButtons}>
-                            <button onClick={() => {scrollToSection("aboutMeForNavigation")}}>{t("aboutMe")}</button>
-                            <button onClick={() => {scrollToSection("contactMe")}}>{t("contact")}</button>
+                            <button onClick={() => {scrollToElement("aboutMeForNavigation")}}>{t("aboutMe")}</button>
+                            <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
                         </span>
                     <Icon name={"moon2"} size={[622, 425]}></Icon>{/*[582, 396]*/}
                 </div>

@@ -33,13 +33,8 @@ export function useHomepage () {
         return () => observer.disconnect();
     }, []);
 
-    const scrollToSection = (id) => {
-        document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
-    };
-
     return {
         title,
-        scrollToSection,
     };
 
 }

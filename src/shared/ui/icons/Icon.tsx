@@ -6,7 +6,7 @@ interface IconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
     size?: number | string | [number | string, number | string];
 }
 
-export const Icon: React.FC<IconProps> = ({ name, size = 24, style, alt, ...rest }) => {
+export const Icon: React.FC<IconProps> = ({ name, size, style, alt, ...rest }) => {
     const src = iconMap[name];
     console.log(src);
     if(!src) {

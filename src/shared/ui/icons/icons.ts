@@ -6,6 +6,10 @@ import logoHomeScreen from '@/shared/assets/images/logo_homeScreen.jpg';
 import navigationBarLogo from '@/shared/assets/images/navigationBarLogo.png';
 import navigationBarLogo1 from '@/shared/assets/images/navigationBarLogo1.png';
 import astro from '@/shared/assets/images/astro.jpg';
+import astroOfferDescr from '@/shared/assets/images/astroOfferDescr.png';
+import tarotOfferDescr from '@/shared/assets/images/tarotOfferDescr.png';
+import aromaOfferDescr from '@/shared/assets/images/aromaOfferDescr.png';
+import eventsOfferDescr from '@/shared/assets/images/eventsOfferDescr.png'
 import tarot from '@/shared/assets/images/tarot.png';
 import aroma from '@/shared/assets/images/aroma.png';
 import events from '@/shared/assets/images/events.jpg';
@@ -27,6 +31,10 @@ export const iconMap = {
     navigationBarLogo,
     navigationBarLogo1,
     astro,
+    astroOfferDescr,
+    tarotOfferDescr,
+    aromaOfferDescr,
+    eventsOfferDescr,
     tarot,
     aroma,
     events,
