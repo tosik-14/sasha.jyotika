@@ -12,7 +12,9 @@ export const NavigationBoard = ({title} : titleProps) => {
 
     return (
         <div className={styles.navigationBoard} /*id="servicesForNavigation"*/>
-            <Icon name={"navigationBarLogo1"} size={310}></Icon>
+            <button onClick={() => {scrollToElement("home")}}>
+                <Icon name={"navigationBarLogo1"} size={310}></Icon>
+            </button>
             <p className={styles.navigationBoardTitle}>{title}</p>
             <span className={styles.navigationBoardButtons}>
                             <button onClick={() => {scrollToElement("aboutMeForNavigation")}}>{t("aboutMe")}</button>
