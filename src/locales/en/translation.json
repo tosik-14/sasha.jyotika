@@ -19,5 +19,6 @@
   "name": "Name",
   "email": "Email",
   "message": "Message",
-  "send": "Send"
+  "send": "Send",
+  "thankYou": "Thank you!"
 }

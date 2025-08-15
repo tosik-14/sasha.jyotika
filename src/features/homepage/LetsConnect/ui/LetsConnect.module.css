@@ -147,6 +147,19 @@
     align-items: center;
 }
 
+.gratitudeText {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-beige);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    /*display: none;*/
+}
+
 
 
 /* ==== Планшет и мобильные ==== */
@@ -184,6 +197,10 @@
         text-align: center;
     }
 
+    .gratitudeText {
+        font-size: 20px;
+    }
+
     .connectForm {
         display: flex;
         gap: 20px;
@@ -215,6 +232,10 @@
     }
 
     .paragraphSomeText {
+        font-size: 18px;
+    }
+
+    .gratitudeText {
         font-size: 18px;
     }
 
