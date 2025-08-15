@@ -13,6 +13,10 @@ export function useLetsConnect() {
             message: form.message.value
         };
 
+        if (data.name === "" || data.email === "" || data.message === "") {
+            return;
+        }
+
         const res = await fetch(import.meta.env.VITE_API_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
