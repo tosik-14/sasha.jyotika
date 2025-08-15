@@ -146,3 +146,90 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+/* ==== Планшет и мобильные ==== */
+@media (max-width: 1024px) {
+    .connectBlock {
+        gap: 30px;
+    }
+
+    .connectForm {
+        width: 100%;
+    }
+
+    .connectForm button {
+        width: 100px;
+        margin-right: 20px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .connectBlock > :first-child {
+        display: none;
+    }
+
+    .connectBlock {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .paragraphSomeText {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .connectForm {
+        display: flex;
+        gap: 20px;
+    }
+
+    .connectForm input,
+    .connectForm textarea {
+        font-size: 18px;
+    }
+
+    .connectForm button {
+        width: 100px;
+        margin-right: 20px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    /*.sendButtonAndLinks {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }*/
+}
+
+
+@media (max-width: 480px) {
+    .connectContent {
+        margin-top: 100px;
+    }
+
+    .paragraphSomeText {
+        font-size: 18px;
+    }
+
+    .connectForm {
+        display: flex;
+        gap: 20px;
+    }
+
+    .connectForm button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sendButtonAndLinks {
+        align-items: center;
+        width: 100%;
+    }
+}

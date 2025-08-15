@@ -40,3 +40,55 @@
     background-color: var(--color-light-lavender);
     color: var(--color-blue);
 }
+
+
+@media (max-width: 1024px) {
+    .homeScreen {
+        gap: 30px;
+        padding: 0 16px;
+    }
+
+    .homeScreenContent img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .homeScreenButtons button {
+        width: 120px;
+        height: 38px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .homeScreenContent {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .homeScreenContent img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    /* Кнопки в колонку */
+    .homeScreenButtons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .homeScreenButtons button {
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeScreenButtons button {
+        width: 150px;
+        font-size: 16px;
+    }
+}

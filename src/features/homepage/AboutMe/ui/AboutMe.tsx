@@ -8,7 +8,7 @@ export const AboutMe = () => {
 
     return (
         <div className={styles.aboutMeContent}>
-            <Icon name={"sashaAboutMe"} size={[414, 532]}/>
+            <span className={styles.aboutMePhoto}><Icon name={"sashaAboutMe"} size={[414, 532]}/></span>
 
             <div className={styles.aboutMeText}>
                 <p className={styles.aboutMeGeneral}>{t("aboutMeGeneral")}</p>

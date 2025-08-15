@@ -7,7 +7,9 @@
 
 .contentContainer {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    /*padding: 0 16px;*/
 }
 
 .languageSwitcher {
@@ -29,7 +31,7 @@
 .footer p {
     font-family: var(--font-secondary);
     font-weight: 200;
-    font-size: 24px;
+    font-size: clamp(14px, 2vw, 24px);
 }
 
 
@@ -39,6 +41,20 @@
 }
 
 
+
+
+
+@media (max-width: 1640px) {
+    .moonPattern1,
+    .moonPattern2,
+    .moonPattern3,
+    .moonPattern4,
+    .moonPattern5,
+    .moonPattern6,
+    .moonPattern7 {
+        display: none;
+    }
+}
 
 
 
@@ -90,6 +106,16 @@
     bottom: -45%;
     right: -25%;
     z-index: 0;
+}
+
+@media (max-width: 1600px) {
+    .moonPattern1 { left: -15%; }
+    .moonPattern2 { right: -20%; }
+    .moonPattern3 { left: -15%; }
+    .moonPattern4 { right: -20%; }
+    .moonPattern5 { left: -20%; }
+    .moonPattern6 { right: -20%; }
+    .moonPattern7 { right: -15%; }
 }
 
 

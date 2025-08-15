@@ -29,3 +29,9 @@
     font-size: 24px;
     margin-right: 0;
 }
+
+@media (max-width: 1250px) {
+    .socialMediaLinks {
+        display: none;
+    }
+}

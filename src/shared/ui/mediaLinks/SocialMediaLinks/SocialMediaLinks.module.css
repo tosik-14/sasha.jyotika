@@ -5,6 +5,7 @@
 }
 
 .container a {
+    margin: auto 0;
     text-decoration: none;
 }
 
@@ -26,4 +27,21 @@
     font-weight: 800;
     font-size: 24px;
     margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .instagramNickName {
+        font-size: 18px;
+    }
+
+    .instagramNickName > p:first-child {
+        font-size: 18px;
+    }
+
 }

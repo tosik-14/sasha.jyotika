@@ -19,8 +19,10 @@
 
 .myOffers {
     margin-top: 60px;
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     /*gap: 38px;*/
     justify-content: space-between;
 }
@@ -82,4 +84,54 @@
 
 .myOffersExploreText {
     padding-top: 100px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .myOffers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .offerCard {
+        margin: 0 auto;
+        font-size: 30px;
+        max-width: 340px;
+    }
+
+    .myOffersExploreText {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .paragraphSomeText {
+        font-size: 18px
+    }
+}
+
+
+@media (max-width: 600px) {
+    .myOffers {/*
+        grid-template-columns: 1fr;*/
+        gap: 24px;
+        margin: 40px auto 0 auto;
+    }
+    .offerCard {
+        max-width: 260px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+   /* .offerCard  {
+        width: 40%;
+        height: 40%;
+    }*/
+
+    .offerCard img {
+        width: 100%;
+        height: auto;
+    }
 }
