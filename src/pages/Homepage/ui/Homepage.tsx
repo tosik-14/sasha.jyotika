@@ -7,6 +7,7 @@ import {WhatDoIOffer} from "@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer";
 import {AboutMe} from "@/features/homepage/AboutMe/ui/AboutMe";
 import {LetsConnect} from "@/features/homepage/LetsConnect/ui/LetsConnect";
 import {NavigationBoard} from "@/features/homepage/NavigationBoard/NavigationBoard";
+import {Footer} from "@/features/Footer/ui/Footer";
 import {Icon} from "@/shared/ui/icons/Icon";
 
 
@@ -67,11 +68,7 @@ export const Homepage = () => {
                     </div>
                 </section>
 
-                <footer className={styles.footer}>
-                    <div className={styles.footerContent}>
-                        <p>© A Star Consulting</p>
-                    </div>
-                </footer>
+                <Footer />
 
             </div>
 

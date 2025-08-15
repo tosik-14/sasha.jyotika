@@ -1,0 +1,17 @@
+.footer {
+    padding: 20px;
+    background-color: var(--color-purple);
+    color: var(--color-beige);
+}
+
+.footer p {
+    font-family: var(--font-secondary);
+    font-weight: 200;
+    font-size: 24px;
+}
+
+
+.footerContent {
+    margin-top: 150px;
+    text-align: center;
+}
