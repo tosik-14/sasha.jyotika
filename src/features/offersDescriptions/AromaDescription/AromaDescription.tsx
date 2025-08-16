@@ -1,29 +1,38 @@
 import { useTranslation } from 'react-i18next';
 import styles from "@/features/offersDescriptions/styles/offersDescriptions.module.css";
-import {Icon} from "@/shared/ui/icons/Icon";
-import {scrollToElement} from "@/shared/lib/scrollToElement";
+import { ProductDescriptionCard } from '@/shared/ui/ProductDesriptionCard/ProductDescriptionCard';
+import type { Product } from '@/features/offersDescriptions/AstroDescription/AstroDescription';
+
+const aromadiagnosticsProducts: Product[] = [
+    {
+        id: 1,
+        image: "aromaOfferDescr",
+        title: "aromaProductTitle1",
+        description: "aromaProductDescription1"
+    },
+    {
+        id: 2,
+        image: "aromaOfferDescr",
+        title: "aromaProductTitle2",
+        description: "aromaProductDescription2"
+    }
+]
 
 export const AromaDescription = () => {
     const { t } = useTranslation();
 
     return(
-
-        <div className={styles.activeCardDescrBlock}>
-            <span className={styles.activeCardDescrBlockPicture}><Icon name={"aromaOfferDescr"}/></span>
-
-            <p className={styles.activeCardDescrBlockText}>
-                {t("aromaOfferDescr")}
-            </p>
-
-            <div className={styles.activeCardDescrBlockButtons}>
-                <a href="https://ig.me/m/sasha.jyotika" target="_blank" rel="noopener noreferrer">
-                    <p>Message</p>
-                    <Icon name={"instagram"} size={25}/>
-                </a>
-                <button onClick={() => {scrollToElement("contactMe")}}>Email</button>
+        <div className={styles.container}>
+            <div className={styles.productsGrid}>
+                {aromadiagnosticsProducts.map((product) => (
+                    <ProductDescriptionCard
+                        key={product.id}
+                        image={product.image}
+                        title={t(product.title)}
+                        description={t(product.description)}
+                    />
+                ))}
             </div>
-
         </div>
-
     );
 }

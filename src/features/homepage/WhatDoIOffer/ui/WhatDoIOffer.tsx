@@ -1,13 +1,10 @@
 import styles from '@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer.module.css'
 import {Icon} from "@/shared/ui/icons/Icon";
 import { useTranslation } from 'react-i18next';
-import {useWhatDoIOffer} from "@/features/homepage/WhatDoIOffer/hook/useWhatDoIOffer";
-import {scrollToElement} from "@/shared/lib/scrollToElement";
 import {useNavigate} from "react-router-dom";
 
 export const WhatDoIOffer = () => {
     const { t } = useTranslation();
-    const { activeId, activeOffer, toggleOffer } = useWhatDoIOffer();
     const navigate = useNavigate();
 
     return (
