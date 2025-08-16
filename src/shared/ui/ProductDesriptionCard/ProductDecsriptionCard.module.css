@@ -1,0 +1,114 @@
+.activeCardDescrBlock {
+    position: relative;
+    width: 90%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: var(--color-light-lavender);
+}
+
+
+.activeCardDescrBlockPicture img {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 100%;
+}
+
+.activeCardDescrBlockText {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-blue);
+    margin: 20px 25px;
+}
+
+.activeCardDescrBlockButtons {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    height: 42px;
+}
+
+.activeCardDescrBlockButtons a {
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11px;
+    width: 158px;
+    height: 42px;
+    align-items: center;
+    background-color: var(--color-purple);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
+.activeCardDescrBlockButtons a p{
+    margin: 0;
+}
+
+.activeCardDescrBlockButtons button {
+    all: initial;
+    text-align: center;
+    border-radius: 4px;
+    width: 158px;
+    height: 42px;
+    background-color: var(--color-blue);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
+@media (max-width: 768px) {
+    .activeCardDescrBlock {
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        margin-top: 40px;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .activeCardDescrBlockPicture {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .activeCardDescrBlockPicture img {
+        width: 80%;
+    }
+
+    .activeCardDescrBlockText {
+        margin: 0;
+        text-align: center;
+        font-size: clamp(16px, 4vw, 24px);
+        color: var(--color-beige);
+    }
+
+    .activeCardDescrBlockButtons {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 16px;
+        height: auto;
+        width: 100%;
+    }
+
+    .activeCardDescrBlockButtons a,
+    .activeCardDescrBlockButtons button {
+        width: 45%;
+        font-size: clamp(16px, 3.5vw, 24px);
+    }
+}
