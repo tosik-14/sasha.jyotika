@@ -1,36 +1,57 @@
 .activeCardDescrBlock {
-    position: relative;
     width: 90%;
     margin: 100px auto 0 auto;
     display: flex;
     flex-direction: row;
-    border-radius: 4px;
-    background-color: var(--color-light-lavender);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-
-.activeCardDescrBlockPicture img {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    height: 100%;
+.activeCardDescrText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.activeCardDescrBlockText {
+.activeCardDescrTitle {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--color-beige);
+    margin: 0;
+}
+
+.activeCardDescrDescription {
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: 24px;
-    color: var(--color-blue);
-    margin: 20px 25px;
+    color: var(--color-beige);
+    margin: 0;
+    white-space: pre-line;
+}
+
+.activeCardDescrRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.activeCardDescrBlockPicture img,
+.activeCardDescrBlockPicture svg {
+    max-width: 350px;
+    height: auto;
+    border-radius: 4px;
 }
 
 .activeCardDescrBlockButtons {
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
     display: flex;
     flex-direction: row;
-    gap: 19px;
-    height: 42px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .activeCardDescrBlockButtons a {
@@ -50,10 +71,6 @@
     color: var(--color-beige);
 }
 
-.activeCardDescrBlockButtons a p{
-    margin: 0;
-}
-
 .activeCardDescrBlockButtons button {
     all: initial;
     text-align: center;
@@ -67,48 +84,48 @@
     color: var(--color-beige);
 }
 
+/* Разделитель */
+.activeCardDivider {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    border: none;
+    border-top: 1px solid var(--color-beige);
+}
+
+/* ==== Адаптация для мобилок ==== */
 @media (max-width: 768px) {
     .activeCardDescrBlock {
         flex-direction: column;
         align-items: center;
-        background-color: transparent;
-        margin-top: 40px;
-        padding: 0;
         gap: 20px;
-    }
-
-    .activeCardDescrBlockPicture {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .activeCardDescrBlockPicture img {
-        width: 80%;
-    }
-
-    .activeCardDescrBlockText {
-        margin: 0;
         text-align: center;
-        font-size: clamp(16px, 4vw, 24px);
-        color: var(--color-beige);
+    }
+
+    .activeCardDescrText {
+        align-items: start;
+    }
+
+    .activeCardDescrTitle {
+        font-size: 32px;
+    }
+
+    .activeCardDescrDescription {
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .activeCardDescrBlockPicture img,
+    .activeCardDescrBlockPicture svg {
+        max-width: 80%;
     }
 
     .activeCardDescrBlockButtons {
-        position: static;
-        flex-direction: row;
-        justify-content: center;
-        gap: 16px;
-        margin-top: 16px;
-        height: auto;
+        flex-direction: column;
         width: 100%;
     }
 
     .activeCardDescrBlockButtons a,
     .activeCardDescrBlockButtons button {
-        width: 45%;
-        font-size: clamp(16px, 3.5vw, 24px);
+        width: 80%;
     }
 }

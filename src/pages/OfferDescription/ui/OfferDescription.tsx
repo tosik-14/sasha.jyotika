@@ -7,6 +7,7 @@ import {EventsDescription} from "@/features/offersDescriptions/EventsDescription
 import {NavigationBoard} from "@/features/homepage/NavigationBoard/NavigationBoard";
 import {LetsConnect} from "@/features/homepage/LetsConnect/ui/LetsConnect";
 import {Footer} from "@/features/Footer/ui/Footer";
+import {SocialMediaLinksVertical} from "@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical";
 
 
 
@@ -15,6 +16,7 @@ export const OfferDescription = () => {
 
     return (
         <div className={styles.container}>
+            <SocialMediaLinksVertical />
             <div className={styles.contentContainer}>
 
                 {offerName.offerName === "astro" && (
