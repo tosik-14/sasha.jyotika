@@ -1,6 +1,7 @@
 import styles from '@/shared/ui/ProductDesriptionCard/ProductDecsriptionCard.module.css'
 import {Icon} from "@/shared/ui/icons/Icon";
 import {useNavigate} from "react-router-dom";
+import {scrollToElement} from "@/shared/lib/scrollToElement";
 
 interface ProductDescriptionProps {
     image: string;
@@ -29,7 +30,7 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({ imag
                             <p>Message</p>
                             <Icon name={"instagram"} size={25}/>
                         </a>
-                        <button onClick={() => navigate('/contact')}>Email</button>
+                        <button onClick={() => {scrollToElement("contactMe")}}>Email</button>
                     </div>
                 </div>
 
