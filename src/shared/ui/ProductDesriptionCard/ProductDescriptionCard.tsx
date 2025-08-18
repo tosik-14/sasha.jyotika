@@ -1,7 +1,7 @@
-import styles from '@/shared/ui/ProductDesriptionCard/ProductDecsriptionCard.module.css'
-import {Icon} from "@/shared/ui/icons/Icon";
-import {useNavigate} from "react-router-dom";
-import {scrollToElement} from "@/shared/lib/scrollToElement";
+import styles from '@/shared/ui/ProductDesriptionCard/ProductDecsriptionCard.module.css';
+import { Icon } from '@/shared/ui/icons/Icon';
+import { useNavigate } from 'react-router-dom';
+import { scrollToElement } from '@/shared/lib/scrollToElement';
 
 interface ProductDescriptionProps {
     image: string;
@@ -9,7 +9,11 @@ interface ProductDescriptionProps {
     description: string;
 }
 
-export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({ image, title, description }) => {
+export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
+    image,
+    title,
+    description,
+}) => {
     const navigate = useNavigate();
 
     return (
@@ -17,30 +21,37 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({ imag
             <div className={styles.activeCardDescrBlock}>
                 <div className={styles.activeCardDescrText}>
                     <p className={styles.activeCardDescrTitle}>{title}</p>
-                    <p className={styles.activeCardDescrDescription}>{description}</p>
+                    <p className={styles.activeCardDescrDescription}>
+                        {description}
+                    </p>
                 </div>
 
                 <div className={styles.activeCardDescrRight}>
                     <span className={styles.activeCardDescrBlockPicture}>
-                        <Icon name={image as IconName}/>
+                        <Icon name={image as IconName} />
                     </span>
 
                     <div className={styles.activeCardDescrBlockButtons}>
-                        <a href="https://ig.me/m/sasha.jyotika" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://ig.me/m/sasha.jyotika"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <p>Message</p>
-                            <Icon name={"instagram"} size={25}/>
+                            <Icon name={'instagram'} size={25} />
                         </a>
-                        <button onClick={() => {scrollToElement("contactMe")}}>Email</button>
+                        <button
+                            onClick={() => {
+                                scrollToElement('contactMe');
+                            }}
+                        >
+                            Email
+                        </button>
                     </div>
                 </div>
-
-
             </div>
 
-            <hr className={styles.activeCardDivider}/>
+            <hr className={styles.activeCardDivider} />
         </>
-
-
-
     );
 };

@@ -9,7 +9,6 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    /*padding: 0 16px;*/
 }
 
 .languageSwitcher {
@@ -40,10 +39,6 @@
     text-align: center;
 }
 
-
-
-
-
 @media (max-width: 1640px) {
     .moonPattern1,
     .moonPattern2,
@@ -55,9 +50,6 @@
         display: none;
     }
 }
-
-
-
 
 .moonPattern1 {
     position: absolute;
@@ -109,13 +101,33 @@
 }
 
 @media (max-width: 1600px) {
-    .moonPattern1 { left: -15%; }
-    .moonPattern2 { right: -20%; }
-    .moonPattern3 { left: -15%; }
-    .moonPattern4 { right: -20%; }
-    .moonPattern5 { left: -20%; }
-    .moonPattern6 { right: -20%; }
-    .moonPattern7 { right: -15%; }
+    .moonPattern1 {
+        left: -15%;
+    }
+
+    .moonPattern2 {
+        right: -20%;
+    }
+
+    .moonPattern3 {
+        left: -15%;
+    }
+
+    .moonPattern4 {
+        right: -20%;
+    }
+
+    .moonPattern5 {
+        left: -20%;
+    }
+
+    .moonPattern6 {
+        right: -20%;
+    }
+
+    .moonPattern7 {
+        right: -15%;
+    }
 }
 
 

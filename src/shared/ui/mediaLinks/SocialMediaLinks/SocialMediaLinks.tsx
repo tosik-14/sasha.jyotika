@@ -1,7 +1,7 @@
 import styles from '@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks.module.css'
 import {Icon} from "@/shared/ui/icons/Icon";
 
-export const SocialMediaLinks = () => { //https://www.instagram.com/sasha.jyotika/
+export const SocialMediaLinks = () => {
     return (
         <div className={styles.container}>
             <a href="https://t.me/alexandramikh" target="_blank" rel="noopener noreferrer">

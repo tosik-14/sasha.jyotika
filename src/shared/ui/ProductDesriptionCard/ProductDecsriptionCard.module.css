@@ -84,7 +84,6 @@
     color: var(--color-beige);
 }
 
-/* Разделитель */
 .activeCardDivider {
     width: 90%;
     margin: 40px auto 0 auto;
@@ -92,7 +91,6 @@
     border-top: 1px solid var(--color-beige);
 }
 
-/* ==== Адаптация для мобилок ==== */
 @media (max-width: 768px) {
     .activeCardDescrBlock {
         flex-direction: column;

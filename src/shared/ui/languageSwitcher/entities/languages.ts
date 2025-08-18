@@ -1,4 +1,4 @@
-import { LanguagesCodeEnums } from "@/shared/ui/languageSwitcher/entities/LanguagesCodeEnums";
+import { LanguagesCodeEnums } from '@/shared/ui/languageSwitcher/entities/LanguagesCodeEnums';
 
 export interface Language {
     code: LanguagesCodeEnums;
@@ -6,6 +6,6 @@ export interface Language {
 }
 
 export const languages: Language[] = [
-    { code: LanguagesCodeEnums.en, label: "English" },
-    { code: LanguagesCodeEnums.ru, label: "Русский" },
+    { code: LanguagesCodeEnums.en, label: 'English' },
+    { code: LanguagesCodeEnums.ru, label: 'Русский' },
 ];

@@ -157,12 +157,8 @@
     top: 50%;
     left: 50%;
     margin: 0;
-    /*display: none;*/
 }
 
-
-
-/* ==== Планшет и мобильные ==== */
 @media (max-width: 1024px) {
     .connectBlock {
         gap: 30px;
@@ -217,12 +213,6 @@
         height: 38px;
         font-size: 18px;
     }
-
-    /*.sendButtonAndLinks {
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-    }*/
 }
 
 

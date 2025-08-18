@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from 'react';
 
 export function useLetsConnect() {
     const [success, setSuccess] = useState<boolean | null>(false);
@@ -10,25 +10,25 @@ export function useLetsConnect() {
         const data = {
             name: form.name.value,
             email: form.email.value,
-            message: form.message.value
+            message: form.message.value,
         };
 
-        if (data.name === "" || data.email === "" || data.message === "") {
+        if (data.name === '' || data.email === '' || data.message === '') {
             return;
         }
 
         const res = await fetch(import.meta.env.VITE_API_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
         });
 
         const result = await res.json();
         if (result.success) {
             form.reset();
-            setSuccess((prev) => prev = true);
-            setTimeout(() =>{
-                setSuccess((prev) => prev = false);
+            setSuccess((prev) => (prev = true));
+            setTimeout(() => {
+                setSuccess((prev) => (prev = false));
             }, 10000);
         } else {
             //alert(result.error);
@@ -38,5 +38,5 @@ export function useLetsConnect() {
     return {
         handleSubmit,
         success,
-    }
+    };
 }

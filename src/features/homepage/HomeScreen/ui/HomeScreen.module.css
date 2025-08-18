@@ -73,7 +73,6 @@
         height: auto;
     }
 
-    /* Кнопки в колонку */
     .homeScreenButtons {
         flex-direction: column;
         gap: 16px;

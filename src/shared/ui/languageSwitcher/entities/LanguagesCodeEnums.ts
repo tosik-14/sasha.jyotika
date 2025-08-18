@@ -1,4 +1,4 @@
 export enum LanguagesCodeEnums {
-    en = "en",
-    ru = "ru",
+    en = 'en',
+    ru = 'ru',
 }

@@ -1,15 +1,13 @@
-import styles from '@/pages/OfferDescription/ui/OfferDescription.module.css'
-import {useParams} from "react-router-dom";
-import {AstroDescription} from "@/features/offersDescriptions/AstroDescription/AstroDescription";
-import {TarotDescription} from "@/features/offersDescriptions/TarotDescription/TarotDescription";
-import {AromaDescription} from "@/features/offersDescriptions/AromaDescription/AromaDescription";
-import {EventsDescription} from "@/features/offersDescriptions/EventsDescription/EventsDescription";
-import {NavigationBoard} from "@/features/homepage/NavigationBoard/NavigationBoard";
-import {LetsConnect} from "@/features/homepage/LetsConnect/ui/LetsConnect";
-import {Footer} from "@/features/Footer/ui/Footer";
-import {SocialMediaLinksVertical} from "@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical";
-
-
+import styles from '@/pages/OfferDescription/ui/OfferDescription.module.css';
+import { useParams } from 'react-router-dom';
+import { AstroDescription } from '@/features/offersDescriptions/AstroDescription/AstroDescription';
+import { TarotDescription } from '@/features/offersDescriptions/TarotDescription/TarotDescription';
+import { AromaDescription } from '@/features/offersDescriptions/AromaDescription/AromaDescription';
+import { EventsDescription } from '@/features/offersDescriptions/EventsDescription/EventsDescription';
+import { NavigationBoard } from '@/features/homepage/NavigationBoard/NavigationBoard';
+import { LetsConnect } from '@/features/homepage/LetsConnect/ui/LetsConnect';
+import { Footer } from '@/features/Footer/ui/Footer';
+import { SocialMediaLinksVertical } from '@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical';
 
 export const OfferDescription = () => {
     const offerName = useParams<{ offerName: string }>();
@@ -18,33 +16,32 @@ export const OfferDescription = () => {
         <div className={styles.container}>
             <SocialMediaLinksVertical />
             <div className={styles.contentContainer}>
+                {offerName.offerName === 'astro' && (
+                    <>
+                        <NavigationBoard title={'Vedic Astrology'} />
+                        <AstroDescription />
+                    </>
+                )}
+                {offerName.offerName === 'tarot' && (
+                    <>
+                        <NavigationBoard title={'Tarot'} />
+                        <TarotDescription />
+                    </>
+                )}
+                {offerName.offerName === 'aroma' && (
+                    <>
+                        <NavigationBoard title={'Aroma Diagnostic'} />
+                        <AromaDescription />
+                    </>
+                )}
+                {offerName.offerName === 'events' && (
+                    <>
+                        <NavigationBoard title={'Events'} />
+                        <EventsDescription />
+                    </>
+                )}
 
-                {offerName.offerName === "astro" && (
-                    <>
-                        <NavigationBoard title={"Vedic Astrology"} />
-                        <AstroDescription/>
-                    </>
-                )}
-                {offerName.offerName === "tarot" && (
-                    <>
-                        <NavigationBoard title={"Tarot"} />
-                        <TarotDescription/>
-                    </>
-                )}
-                {offerName.offerName === "aroma" && (
-                    <>
-                        <NavigationBoard title={"Aroma Diagnostic"} />
-                        <AromaDescription/>
-                    </>
-                )}
-                {offerName.offerName === "events" && (
-                    <>
-                        <NavigationBoard title={"Events"} />
-                        <EventsDescription/>
-                    </>
-                )}
-
-                <section id={"contactMe"}>
+                <section id={'contactMe'}>
                     <LetsConnect />
                 </section>
 
@@ -52,4 +49,4 @@ export const OfferDescription = () => {
             </div>
         </div>
     );
-}
+};
