@@ -1,9 +1,12 @@
 import {useEffect, useState} from "react";
+import {useLocation} from "react-router-dom";
+import {scrollToElement} from "@/shared/lib/scrollToElement";
 import { useTranslation } from 'react-i18next';
 
 export function useHomepage () {
     const { t } = useTranslation();
     const [title, setTitle] = useState<string>(t("whatDoIOffer"));
+    const location = useLocation();
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -32,6 +35,15 @@ export function useHomepage () {
 
         return () => observer.disconnect();
     }, []);
+
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            const el = document.getElementById(location.state.scrollTo);
+            if(el) {
+                el.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location.state]);
 
     return {
         title,

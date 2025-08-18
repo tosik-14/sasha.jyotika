@@ -23,7 +23,15 @@ export const NavigationBoard = ({title} : titleProps) => {
                 <SocialMediaLinks/>
             </span>
             <span className={styles.navigationBoardButtons}>
-                            <button onClick={() => {scrollToElement("aboutMeForNavigation")}}>{t("aboutMe")}</button>
+                            <button onClick={() => {
+                                if (location.pathname === "/") {
+                                    // Если уже на главной
+                                    scrollToElement("aboutMeForNavigation");
+                                } else {
+                                    // Если не на главной
+                                    navigate("/", {state: {scrollTo: "aboutMeForNavigation"}});
+                                }
+                            }}>{t("aboutMe")}</button>
                             <button onClick={() => {scrollToElement("contactMe")}}>{t("contact")}</button>
                         </span>
             <Icon name={"moon2"} size={350}></Icon>{/*[582, 396]*/}
