@@ -1,9 +1,7 @@
 .whatDoIOffer {
     position: relative;
-    /*margin-top: 60px;*/
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     width: 90%;
     margin: 60px auto 0 auto;
 }
@@ -19,8 +17,6 @@
 
 .myOffers {
     margin-top: 60px;
-    /*display: flex;
-    flex-direction: row;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 38px;
@@ -35,7 +31,6 @@
     font-weight: 100;
     font-size: 48px;
     color: var(--color-blue);
-    /*display: inline-block; */
     line-height: 0;
     border-radius: 4px;
     overflow: hidden;
@@ -91,7 +86,12 @@
 @media (max-width: 1024px) {
     .myOffers {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .offerCard img {
+        width: 100%;
+        height: auto;
     }
 
     .offerCard {
@@ -113,8 +113,7 @@
 
 
 @media (max-width: 600px) {
-    .myOffers {/*
-        grid-template-columns: 1fr;*/
+    .myOffers {
         gap: 24px;
         margin: 40px auto 0 auto;
     }
@@ -124,14 +123,3 @@
     }
 }
 
-@media (max-width: 425px) {
-   /* .offerCard  {
-        width: 40%;
-        height: 40%;
-    }*/
-
-    .offerCard img {
-        width: 100%;
-        height: auto;
-    }
-}
