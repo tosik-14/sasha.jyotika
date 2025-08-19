@@ -9,6 +9,7 @@ import { LetsConnect } from '@/features/homepage/LetsConnect/ui/LetsConnect';
 import { NavigationBoard } from '@/features/homepage/NavigationBoard/NavigationBoard';
 import { Footer } from '@/features/Footer/ui/Footer';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
 
 export const Homepage = () => {
     // TODO: clean up
@@ -28,10 +29,13 @@ export const Homepage = () => {
                     <HomeScreen />
                 </section> */} 
                 <NavigationBoard />
+                <section id="banner" className={styles.section}>
+                    <HomeScreen  />
+                </section>
+                
                 <div className={styles.moonPattern2}>
                         <Icon name={'moon4'} size={800} />
                 </div>
-                <span id="servicesForNavigation"></span>
                 
 
                 <section id="services" className={styles.section}>

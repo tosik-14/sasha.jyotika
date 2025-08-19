@@ -21,6 +21,7 @@ import moon6 from '@/shared/assets/patterns/moon6.png';
 import sashaAboutMe from '@/shared/assets/images/sasha_first.png';
 import sashaConnect from '@/shared/assets/images/sasha_second.png';
 import horizontalLogo from '@/shared/assets/images/horizontal_logo.png';
+import bannerImage from '@/shared/assets/images/banner.png'
 
 
 export const iconMap = {
@@ -47,6 +48,7 @@ export const iconMap = {
     sashaAboutMe,
     sashaConnect,
     horizontalLogo,
+    bannerImage,
 } as const;
 
 export type IconName = keyof typeof iconMap;
