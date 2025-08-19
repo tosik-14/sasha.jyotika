@@ -16,8 +16,6 @@
 .navigationBoard button {
     all: initial;
     position: absolute;
-    /*top: -135px;
-    left: -50px;*/
     top: -120px;
     left: -25px;
 }
@@ -27,13 +25,6 @@
     top: -140px;/*top: -150px;*/
     right: 0px;
 }
-
-/*.navigationBoardTitle {
-    font-family: var(--font-secondary);
-    font-weight: 800;
-    font-size: 32px;
-    color: var(--color-beige);
-}*/
 
 .navigationBoardButtons {
     position: absolute;
@@ -51,6 +42,14 @@
     font-weight: 800;
     font-size: 24px;
     color: var(--color-light-lavender);
+    cursor: pointer;
+    transition: color 0.3s ease, transform o.2s ease;
+}
+
+.navigationBoardButtons > button:first-child:hover, 
+.navigationBoardButtons > button:last-child:hover {
+    color: var(--color-beige);
+    transform: translateY(-2px);
 }
 
 .socialMediaLinks {
