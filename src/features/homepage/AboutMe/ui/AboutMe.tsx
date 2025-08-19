@@ -31,7 +31,10 @@ export const AboutMe = () => {
                             </p>
                         </span>
                     </div>
-                    <SocialMediaLinks />
+                    <SocialMediaLinks 
+                        iconColor="var(--color-blue)" 
+                        textColor="var(--color-blue)"
+                    />
                 </div>
             </div>
         </div>
