@@ -4,12 +4,13 @@ import { Icon } from '@/shared/ui/icons/Icon';
 import { useTranslation } from 'react-i18next';
 
 export const HomeScreen = () => {
-    //const { t } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className={styles.bannerSection}>
             <div className={styles.bannerContent}>
                 <Icon name={'bannerImage'} className={styles.bannerImageContainer} />
+                <p className={styles.bannerTextOverlay}> {t('whatDoIOfferShortDecr')} </p>
             </div>
         </div>
     );

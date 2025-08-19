@@ -12,9 +12,6 @@ export const WhatDoIOffer = () => {
             <p className={styles.sectionTitle}>
                 {t('whatDoIOffer')}
             </p>
-            <p className={styles.paragraphSomeText}>
-                {t('whatDoIOfferShortDecr')}
-            </p>
             <div className={styles.myOffers}>
                 <button
                     className={styles.offerCard}
