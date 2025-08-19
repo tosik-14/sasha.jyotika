@@ -22,13 +22,17 @@ export const Homepage = () => {
                 <LanguageSwitcher />
             </div>
 
+            
             <div className={styles.contentContainer}>
                 {/* <section id="home" className={styles.section}>
                     <HomeScreen />
                 </section> */} 
-
-                <span id="servicesForNavigation"></span>
                 <NavigationBoard />
+                <div className={styles.moonPattern2}>
+                        <Icon name={'moon4'} size={800} />
+                </div>
+                <span id="servicesForNavigation"></span>
+                
 
                 <section id="services" className={styles.section}>
                     <WhatDoIOffer />
@@ -36,9 +40,7 @@ export const Homepage = () => {
                     <div className={styles.moonPattern1}>
                         <Icon name={'moon1'} size={250} />
                     </div>
-                    <div className={styles.moonPattern2}>
-                        <Icon name={'moon4'} size={400} />
-                    </div>
+                    
                 </section>
 
                 <section
@@ -51,9 +53,6 @@ export const Homepage = () => {
 
                     <div className={styles.moonPattern3}>
                         <Icon name={'moon3'} size={300} />
-                    </div>
-                    <div className={styles.moonPattern4}>
-                        <Icon name={'moon6'} size={400} />
                     </div>
                 </section>
 

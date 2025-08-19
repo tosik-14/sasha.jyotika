@@ -18,25 +18,25 @@ export const OfferDescription = () => {
             <div className={styles.contentContainer}>
                 {offerName.offerName === 'astro' && (
                     <>
-                        <NavigationBoard title={'Vedic Astrology'} />
+                        <NavigationBoard />
                         <AstroDescription />
                     </>
                 )}
                 {offerName.offerName === 'tarot' && (
                     <>
-                        <NavigationBoard title={'Tarot'} />
+                        <NavigationBoard />
                         <TarotDescription />
                     </>
                 )}
                 {offerName.offerName === 'aroma' && (
                     <>
-                        <NavigationBoard title={'Aroma Diagnostic'} />
+                        <NavigationBoard />
                         <AromaDescription />
                     </>
                 )}
                 {offerName.offerName === 'events' && (
                     <>
-                        <NavigationBoard title={'Events'} />
+                        <NavigationBoard />
                         <EventsDescription />
                     </>
                 )}

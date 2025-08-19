@@ -19,6 +19,7 @@
 
 .section {
     position: relative;
+    z-index: 5;
 }
 
 .footer {
@@ -60,15 +61,15 @@
 
 .moonPattern2 {
     position: absolute;
-    top: 30%;
-    right: -30%;
+    top: 10%;
+    right: -20%;
     z-index: 0;
 }
 
 .moonPattern3 {
     position: absolute;
     top: -20%;
-    left: -25%;
+    left: -35%;
     z-index: 0;
 }
 

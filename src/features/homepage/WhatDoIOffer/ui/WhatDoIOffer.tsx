@@ -25,7 +25,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'astro'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -44,7 +43,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'tarot'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -62,7 +60,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'aroma'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -81,7 +78,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'events'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>

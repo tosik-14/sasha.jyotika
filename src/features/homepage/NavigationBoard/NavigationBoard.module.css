@@ -2,7 +2,7 @@
     background-color: var(--color-blue);
     height: 72px;
     width: 90%;
-    border-radius: 4px;
+    border-radius: 20px;
     margin: 0 auto;
     position: sticky;
     top: 20px;
@@ -69,13 +69,16 @@
 
 .logoBackground {
     position: relative;
-    top: -20px;
+    top: -150px;
+    left: -50px;
+    width: 800px;
+    height: auto;
 }
 
 .logoOverlay {
 	position: absolute;
 	top: 155px;
-	left: 40%;
+	left: 30%;
 	transform: translate(-50%, -50%);
 	z-index: 1; /* on top of moon1 */
 	pointer-events: none;
@@ -91,6 +94,7 @@
         height: 40px;
         padding: 10px 0;
         justify-content: center;
+        border-radius: 10px;
     }
 
 
@@ -101,7 +105,7 @@
 
     .navigationBoard button svg,
     .navigationBoard button img {
-        width: 200px;
+        width: 350px;
         height: auto;
     }
 
@@ -119,6 +123,24 @@
         display: block;
         position: absolute;
         right: 15px;
+    }
+
+    .logoBackground {
+        position: relative;
+        top: -100px;
+        left: -40px;
+        height: auto;
+    }
+    
+    .logoOverlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(5%, 60%);
+        z-index: 1; /* on top of moon1 */
+        pointer-events: none;
+        max-width: 190px;
+        max-height: min-content;
     }
 }
 

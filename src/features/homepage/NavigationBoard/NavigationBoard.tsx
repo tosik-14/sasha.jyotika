@@ -21,7 +21,7 @@ export const NavigationBoard = () => {
                 }}
             >
             <span className={styles.logoStack}>
-                <Icon name={'moon4'} size={500} className={styles.logoBackground}/>
+                <Icon name={'moon4'} className={styles.logoBackground}/>
                 <Icon name={'horizontalLogo'} size={310} className={styles.logoOverlay} />
             </span>
             </button>
