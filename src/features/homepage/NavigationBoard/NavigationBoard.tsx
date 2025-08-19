@@ -5,11 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { SocialMediaLinks } from '@/shared/ui/mediaLinks/SocialMediaLinks/SocialMediaLinks';
 
-interface titleProps {
-    title: string;
-}
-
-export const NavigationBoard = ({ title }: titleProps) => {
+export const NavigationBoard = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
@@ -17,12 +13,18 @@ export const NavigationBoard = ({ title }: titleProps) => {
         <div className={styles.navigationBoard}>
             <button
                 onClick={() => {
-                    scrollToElement('home') || navigate('/');
+                    if (location.pathname === '/') {
+                        window.scrollTo({top: 0, behavior: 'smooth'})
+                    } else {
+                        navigate('/', { state: { scrollTo: 'services' } });
+                    }
                 }}
             >
-                <Icon name={'navigationBarLogo1'} size={310}></Icon>
+            <span className={styles.logoStack}>
+                <Icon name={'moon4'} size={500} className={styles.logoBackground}/>
+                <Icon name={'horizontalLogo'} size={310} className={styles.logoOverlay} />
+            </span>
             </button>
-            <p className={styles.navigationBoardTitle}>{title}</p>
 
             <span className={styles.socialMediaLinks}>
                 <SocialMediaLinks />
@@ -50,8 +52,6 @@ export const NavigationBoard = ({ title }: titleProps) => {
                     {t('contact')}
                 </button>
             </span>
-
-            <Icon name={'moon2'} size={350}></Icon>
         </div>
     );
 };

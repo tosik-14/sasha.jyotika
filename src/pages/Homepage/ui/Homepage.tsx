@@ -1,8 +1,8 @@
 import styles from '@/pages/Homepage/ui/Homepage.module.css';
 import { LanguageSwitcher } from '@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher';
-import { useHomepage } from '@/pages/Homepage/hook/useHomepage';
+//import { useHomepage } from '@/pages/Homepage/hook/useHomepage';
 import { SocialMediaLinksVertical } from '@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical';
-import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
+//import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
 import { WhatDoIOffer } from '@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer';
 import { AboutMe } from '@/features/homepage/AboutMe/ui/AboutMe';
 import { LetsConnect } from '@/features/homepage/LetsConnect/ui/LetsConnect';
@@ -11,7 +11,8 @@ import { Footer } from '@/features/Footer/ui/Footer';
 import { Icon } from '@/shared/ui/icons/Icon';
 
 export const Homepage = () => {
-    const { title } = useHomepage();
+    // TODO: clean up
+    //const { title } = useHomepage();
 
     return (
         <div className={styles.container}>
@@ -22,12 +23,12 @@ export const Homepage = () => {
             </div>
 
             <div className={styles.contentContainer}>
-                <section id="home" className={styles.section}>
+                {/* <section id="home" className={styles.section}>
                     <HomeScreen />
-                </section>
+                </section> */} 
 
                 <span id="servicesForNavigation"></span>
-                <NavigationBoard title={title} />
+                <NavigationBoard />
 
                 <section id="services" className={styles.section}>
                     <WhatDoIOffer />

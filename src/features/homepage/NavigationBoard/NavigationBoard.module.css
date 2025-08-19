@@ -28,12 +28,12 @@
     right: 0px;
 }
 
-.navigationBoardTitle {
+/*.navigationBoardTitle {
     font-family: var(--font-secondary);
     font-weight: 800;
     font-size: 32px;
     color: var(--color-beige);
-}
+}*/
 
 .navigationBoardButtons {
     position: absolute;
@@ -50,14 +50,38 @@
     font-family: var(--font-primary);
     font-weight: 800;
     font-size: 24px;
-    color: var(--color-blue);
+    color: var(--color-light-lavender);
 }
 
 .socialMediaLinks {
     display: none;
 }
 
+.logoStack {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
 
+.logoStack img {
+	display: block;
+}
+
+.logoBackground {
+    position: relative;
+    top: -20px;
+}
+
+.logoOverlay {
+	position: absolute;
+	top: 155px;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 1; /* on top of moon1 */
+	pointer-events: none;
+    max-width: fit-content;
+    max-height: min-content;
+}
 
 
 @media (max-width: 1199px) {
@@ -71,15 +95,14 @@
 
 
     .navigationBoard button {
-        top: -55px;
+        top: -20px;
         left: 0px;
     }
 
     .navigationBoard button svg,
     .navigationBoard button img {
-        width: 170px;
+        width: 200px;
         height: auto;
-
     }
 
 

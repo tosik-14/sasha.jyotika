@@ -9,6 +9,9 @@ export const WhatDoIOffer = () => {
 
     return (
         <div className={styles.whatDoIOffer}>
+            <p className={styles.sectionTitle}>
+                {t('whatDoIOffer')}
+            </p>
             <p className={styles.paragraphSomeText}>
                 {t('whatDoIOfferShortDecr')}
             </p>

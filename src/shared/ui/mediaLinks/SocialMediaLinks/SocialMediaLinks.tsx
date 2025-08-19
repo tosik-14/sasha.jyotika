@@ -10,10 +10,10 @@ export const SocialMediaLinks = () => {
             <a href="https://www.facebook.com/profile.php?id=61575674236195" target="_blank" rel="noopener noreferrer">
                 <Icon name={"facebook"} size={30} />
             </a>
-            <a href="https://ig.me/m/sasha.jyotika" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sasha.jyotika" target="_blank" rel="noopener noreferrer">
                 <Icon name={"instagram"} size={30} />
             </a>
-            <a href="https://ig.me/m/sasha.jyotika" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sasha.jyotika" target="_blank" rel="noopener noreferrer">
                 <span className={styles.instagramNickName}><p>sasha.</p><p>jyotika</p></span>
             </a>
         </div>
