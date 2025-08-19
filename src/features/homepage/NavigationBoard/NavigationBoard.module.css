@@ -1,11 +1,12 @@
 .navigationBoard {
     background-color: var(--color-blue);
     height: 72px;
-    width: 90%;
-    border-radius: 20px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     margin: 0 auto;
     position: sticky;
-    top: 20px;
+    top: 0px;
     overflow: hidden;
     display: flex;
     justify-content: center;
