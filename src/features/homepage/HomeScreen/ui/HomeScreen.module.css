@@ -72,17 +72,30 @@
     border-radius: 20px;
 }
 
-.bannerTextOverlay {
+.bannerTextBlock {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
-    transform: translate(-15%, -40%);
+    transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+.bannerTextPrimary {
+    color: var(--color-beige);
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0 auto 0 auto;
+}
+
+.bannerTextSecondary {
     color: var(--color-beige);
     font-family: var(--font-secondary);
     font-weight: 800;
     font-size: 24px;
-    text-align: right;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -128,13 +141,21 @@
         font-size: 18px;
     }
 
-    .bannerTextOverlay {
-        top: 70%;
+    .bannerTextBlock {
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
         align-items: center;
         text-align: center;
+    }
+
+    .bannerTextPrimary {
+        font-size: 30px;
+    }
+
+    .bannerTextSecondary {
+        font-size: 18px;
     }
 }
 

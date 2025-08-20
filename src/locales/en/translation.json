@@ -5,7 +5,7 @@
   "whatDoIOffer": "What do I offer?",
   "whoAmI": "A little bit about myself",
   "letsConnect": "Let's Connect!",
-  "whatDoIOfferShortDecr": "Helping find Clarity. Insight. Empowerment. through defining moments.",
+  "whatDoIOfferShortDecr": "Find Clarity. Insight. Empowerment.",
   "whatDoIOfferExplore": "Explore astrology, tarot, and intuitive tools blended with therapeutic insight to bring clarity, direction, and meaning into your life.",
   "astroOfferDescr": "Vedic astrology description",
   "tarotOfferDescr": "Tarot description",
@@ -21,6 +21,7 @@
   "message": "Message",
   "send": "Send",
   "thankYou": "Thank you!",
+  "welcomeText": "Take a deep breath...",
 
   "astroProductTitle1": "Birth chart reading",
   "astroProductTitle2": "Year Forecast",

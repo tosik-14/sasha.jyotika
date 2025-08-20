@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90%;
     margin: 10px auto 0 auto;
 }
@@ -86,7 +87,7 @@
 }
 
 .myOffersExploreText {
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
@@ -95,6 +96,7 @@
     .myOffers {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+        max-width: 90%;
     }
 
     .offerCard img {
@@ -104,12 +106,21 @@
 
     .offerCard {
         margin: 0 auto;
-        font-size: 30px;
+        font-size: 50px;
         max-width: 340px;
     }
 
     .myOffersExploreText {
-        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .offerCardCover {
+        background-color: var(--offersCover);
+        opacity: 1;
+    }
+
+    .offerCard label {
+        display: flex;
     }
 }
 
@@ -117,13 +128,18 @@
     .paragraphSomeText {
         font-size: 18px
     }
+
+    .myOffers {
+        gap: 24px;
+        margin: 20px auto 0 auto;
+    }
 }
 
 
 @media (max-width: 600px) {
     .myOffers {
         gap: 24px;
-        margin: 40px auto 0 auto;
+        margin: 0px auto 0 auto;
     }
     .offerCard {
         max-width: 260px;

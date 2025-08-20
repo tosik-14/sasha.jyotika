@@ -10,7 +10,11 @@ export const HomeScreen = () => {
         <div className={styles.bannerSection}>
             <div className={styles.bannerContent}>
                 <Icon name={'bannerImage'} className={styles.bannerImageContainer} />
-                <p className={styles.bannerTextOverlay}> {t('whatDoIOfferShortDecr')} </p>
+                <div className={styles.bannerTextBlock}> 
+                    <p className={styles.bannerTextPrimary}> {t('welcomeText')} </p>
+                    <p className={styles.bannerTextSecondary}> {t('whatDoIOfferShortDecr')} </p>
+                </div>
+                
             </div>
         </div>
     );

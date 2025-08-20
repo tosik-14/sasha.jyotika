@@ -12,6 +12,11 @@ export const WhatDoIOffer = () => {
             <p className={styles.sectionTitle}>
                 {t('whatDoIOffer')}
             </p>
+            <div className={styles.myOffersExploreText}>
+                <p className={styles.paragraphSomeText}>
+                    {t('whatDoIOfferExplore')}
+                </p>
+            </div>
             <div className={styles.myOffers}>
                 <button
                     className={styles.offerCard}
@@ -82,12 +87,6 @@ export const WhatDoIOffer = () => {
                         </span>
                     </div>
                 </button>
-            </div>
-
-            <div className={styles.myOffersExploreText}>
-                <p className={styles.paragraphSomeText}>
-                    {t('whatDoIOfferExplore')}
-                </p>
             </div>
         </div>
     );

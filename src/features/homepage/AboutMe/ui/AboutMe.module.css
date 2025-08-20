@@ -63,22 +63,10 @@
 }
 
 @media (max-width: 1024px) {
-    .aboutMeContent {
-        gap: 30px;
-        width: 95%;
+
+    .aboutMeSectionLayout {
+        margin: 40px auto 0 auto;
     }
-
-    .aboutMeGeneral {
-        font-size: 22px;
-    }
-
-    .aboutMeDetail {
-        font-size: 22px;
-    }
-}
-
-
-@media (max-width: 768px) {
 
     .aboutMeContent {
         flex-direction: column;
