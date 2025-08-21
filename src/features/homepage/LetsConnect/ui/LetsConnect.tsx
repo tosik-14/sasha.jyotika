@@ -10,6 +10,9 @@ export const LetsConnect = () => {
 
     return (
         <div className={styles.connectContent}>
+            <p className={styles.sectionTitle}>
+                {t('letsConnect')}
+            </p>
             <p className={styles.paragraphSomeText}>{t('lestConnectPhrase')}</p>
 
             <div className={styles.connectBlock}>

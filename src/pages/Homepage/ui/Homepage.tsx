@@ -1,17 +1,19 @@
 import styles from '@/pages/Homepage/ui/Homepage.module.css';
 import { LanguageSwitcher } from '@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher';
-import { useHomepage } from '@/pages/Homepage/hook/useHomepage';
+//import { useHomepage } from '@/pages/Homepage/hook/useHomepage';
 import { SocialMediaLinksVertical } from '@/shared/ui/mediaLinks/SocialMediaLinksVertical/SocialMediaLinksVertical';
-import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
+//import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
 import { WhatDoIOffer } from '@/features/homepage/WhatDoIOffer/ui/WhatDoIOffer';
 import { AboutMe } from '@/features/homepage/AboutMe/ui/AboutMe';
 import { LetsConnect } from '@/features/homepage/LetsConnect/ui/LetsConnect';
 import { NavigationBoard } from '@/features/homepage/NavigationBoard/NavigationBoard';
 import { Footer } from '@/features/Footer/ui/Footer';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { HomeScreen } from '@/features/homepage/HomeScreen/ui/HomeScreen';
 
 export const Homepage = () => {
-    const { title } = useHomepage();
+    // TODO: clean up
+    //const { title } = useHomepage();
 
     return (
         <div className={styles.container}>
@@ -21,13 +23,20 @@ export const Homepage = () => {
                 <LanguageSwitcher />
             </div>
 
+            
             <div className={styles.contentContainer}>
-                <section id="home" className={styles.section}>
+                {/* <section id="home" className={styles.section}>
                     <HomeScreen />
+                </section> */} 
+                <NavigationBoard />
+                <section id="banner" className={styles.section}>
+                    <HomeScreen  />
                 </section>
-
-                <span id="servicesForNavigation"></span>
-                <NavigationBoard title={title} />
+                
+                <div className={styles.moonPattern2}>
+                        <Icon name={'moon4'} size={800} />
+                </div>
+                
 
                 <section id="services" className={styles.section}>
                     <WhatDoIOffer />
@@ -35,9 +44,7 @@ export const Homepage = () => {
                     <div className={styles.moonPattern1}>
                         <Icon name={'moon1'} size={250} />
                     </div>
-                    <div className={styles.moonPattern2}>
-                        <Icon name={'moon4'} size={400} />
-                    </div>
+                    
                 </section>
 
                 <section
@@ -50,9 +57,6 @@ export const Homepage = () => {
 
                     <div className={styles.moonPattern3}>
                         <Icon name={'moon3'} size={300} />
-                    </div>
-                    <div className={styles.moonPattern4}>
-                        <Icon name={'moon6'} size={400} />
                     </div>
                 </section>
 

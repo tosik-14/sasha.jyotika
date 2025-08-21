@@ -9,9 +9,14 @@ export const WhatDoIOffer = () => {
 
     return (
         <div className={styles.whatDoIOffer}>
-            <p className={styles.paragraphSomeText}>
-                {t('whatDoIOfferShortDecr')}
+            <p className={styles.sectionTitle}>
+                {t('whatDoIOffer')}
             </p>
+            <div className={styles.myOffersExploreText}>
+                <p className={styles.paragraphSomeText}>
+                    {t('whatDoIOfferExplore')}
+                </p>
+            </div>
             <div className={styles.myOffers}>
                 <button
                     className={styles.offerCard}
@@ -22,7 +27,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'astro'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -41,7 +45,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'tarot'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -59,7 +62,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'aroma'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -78,7 +80,6 @@ export const WhatDoIOffer = () => {
                     <Icon
                         name={'events'}
                         size={[246, 316]}
-                        style={{ borderRadius: 4 }}
                     />
                     <div className={styles.offerCardCover}>
                         <span>
@@ -86,12 +87,6 @@ export const WhatDoIOffer = () => {
                         </span>
                     </div>
                 </button>
-            </div>
-
-            <div className={styles.myOffersExploreText}>
-                <p className={styles.paragraphSomeText}>
-                    {t('whatDoIOfferExplore')}
-                </p>
             </div>
         </div>
     );

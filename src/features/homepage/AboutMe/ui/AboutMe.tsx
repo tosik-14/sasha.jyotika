@@ -7,27 +7,35 @@ export const AboutMe = () => {
     const { t } = useTranslation();
 
     return (
-        <div className={styles.aboutMeContent}>
-            <span className={styles.aboutMePhoto}>
-                <Icon name={'sashaAboutMe'} size={[414, 532]} />
-            </span>
-
-            <div className={styles.aboutMeText}>
-                <p className={styles.aboutMeGeneral}>{t('aboutMeGeneral')}</p>
-
-                <span className={styles.aboutMeDetailText}>
-                    <p className={styles.aboutMeDetail}>
-                        {t('aboutMeDetail-1')}
-                    </p>
-                    <p className={styles.aboutMeDetail}>
-                        {t('aboutMeDetail-2')}
-                    </p>
-                    <p className={styles.aboutMeDetail}>
-                        {t('aboutMeDetail-3')}
-                    </p>
+        <div className={styles.aboutMeSectionLayout}>
+            <p className={styles.sectionTitle}>
+                {t('whoAmI')}
+            </p>
+            <div className={styles.aboutMeContent}>
+                <span className={styles.aboutMePhoto}>
+                    <Icon name={'sashaAboutMe'} size={[414, 532]} />
                 </span>
 
-                <SocialMediaLinks />
+                <div className={styles.aboutMeTextContent}>
+                    <div className={styles.aboutMeText}>
+                        <p className={styles.aboutMeGeneral}>{t('aboutMeGeneral')}</p>
+                        <span className={styles.aboutMeDetailText}>
+                            <p className={styles.aboutMeDetail}>
+                                {t('aboutMeDetail-1')}
+                            </p>
+                            <p className={styles.aboutMeDetail}>
+                                {t('aboutMeDetail-2')}
+                            </p>
+                            <p className={styles.aboutMeDetail}>
+                                {t('aboutMeDetail-3')}
+                            </p>
+                        </span>
+                    </div>
+                    <SocialMediaLinks 
+                        iconColor="var(--color-blue)" 
+                        textColor="var(--color-blue)"
+                    />
+                </div>
             </div>
         </div>
     );

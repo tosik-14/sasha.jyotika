@@ -1,7 +1,7 @@
 import globalPlanet from '@/shared/assets/icons/globalPlanet.svg';
-import telegram from '@/shared/assets/icons/telegram.svg';
-import instagram from '@/shared/assets/icons/instagram.svg';
-import facebook from '@/shared/assets/icons/facebook.svg';
+import telegram from '@/shared/assets/icons/telegram.png';
+import instagram from '@/shared/assets/icons/instagram.png';
+import facebook from '@/shared/assets/icons/facebook.png';
 import logoHomeScreen from '@/shared/assets/images/logo_homeScreen.jpg';
 import navigationBarLogo from '@/shared/assets/images/navigationBarLogo.png';
 import navigationBarLogo1 from '@/shared/assets/images/navigationBarLogo1.png';
@@ -20,6 +20,8 @@ import moon4 from '@/shared/assets/patterns/moon4.png';
 import moon6 from '@/shared/assets/patterns/moon6.png';
 import sashaAboutMe from '@/shared/assets/images/sasha_first.png';
 import sashaConnect from '@/shared/assets/images/sasha_second.png';
+import horizontalLogo from '@/shared/assets/images/horizontal_logo.png';
+import bannerImage from '@/shared/assets/images/banner.png'
 
 
 export const iconMap = {
@@ -45,6 +47,8 @@ export const iconMap = {
     moon6,
     sashaAboutMe,
     sashaConnect,
+    horizontalLogo,
+    bannerImage,
 } as const;
 
 export type IconName = keyof typeof iconMap;

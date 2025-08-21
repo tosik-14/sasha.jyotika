@@ -1,11 +1,12 @@
 .navigationBoard {
     background-color: var(--color-blue);
     height: 72px;
-    width: 90%;
-    border-radius: 4px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     margin: 0 auto;
     position: sticky;
-    top: 20px;
+    top: 0px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -16,8 +17,6 @@
 .navigationBoard button {
     all: initial;
     position: absolute;
-    /*top: -135px;
-    left: -50px;*/
     top: -120px;
     left: -25px;
 }
@@ -26,13 +25,6 @@
     position: absolute;
     top: -140px;/*top: -150px;*/
     right: 0px;
-}
-
-.navigationBoardTitle {
-    font-family: var(--font-secondary);
-    font-weight: 800;
-    font-size: 32px;
-    color: var(--color-beige);
 }
 
 .navigationBoardButtons {
@@ -50,14 +42,49 @@
     font-family: var(--font-primary);
     font-weight: 800;
     font-size: 24px;
-    color: var(--color-blue);
+    color: var(--color-light-lavender);
+    cursor: pointer;
+    transition: color 0.3s ease, transform o.2s ease;
+}
+
+.navigationBoardButtons > button:first-child:hover, 
+.navigationBoardButtons > button:last-child:hover {
+    color: var(--color-beige);
+    transform: translateY(-2px);
 }
 
 .socialMediaLinks {
     display: none;
 }
 
+.logoStack {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
 
+.logoStack img {
+	display: block;
+}
+
+.logoBackground {
+    position: relative;
+    top: -150px;
+    left: -50px;
+    width: 800px;
+    height: auto;
+}
+
+.logoOverlay {
+	position: absolute;
+	top: 155px;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	z-index: 1; /* on top of moon1 */
+	pointer-events: none;
+    max-width: fit-content;
+    max-height: min-content;
+}
 
 
 @media (max-width: 1199px) {
@@ -67,19 +94,19 @@
         height: 40px;
         padding: 10px 0;
         justify-content: center;
+        border-radius: 10px;
     }
 
 
     .navigationBoard button {
-        top: -55px;
+        top: -20px;
         left: 0px;
     }
 
     .navigationBoard button svg,
     .navigationBoard button img {
-        width: 170px;
+        width: 350px;
         height: auto;
-
     }
 
 
@@ -96,6 +123,24 @@
         display: block;
         position: absolute;
         right: 15px;
+    }
+
+    .logoBackground {
+        position: relative;
+        top: -100px;
+        left: -40px;
+        height: auto;
+    }
+    
+    .logoOverlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(5%, 60%);
+        z-index: 1; /* on top of moon1 */
+        pointer-events: none;
+        max-width: 190px;
+        max-height: min-content;
     }
 }
 
