@@ -1,6 +1,5 @@
 import styles from '@/shared/ui/ProductDesriptionCard/ProductDecsriptionCard.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
-import { useNavigate } from 'react-router-dom';
 import { scrollToElement } from '@/shared/lib/scrollToElement';
 import { useState } from 'react';
 
@@ -15,7 +14,6 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
     title,
     description,
 }) => {
-    const navigate = useNavigate();
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpanded = () => {
@@ -23,7 +21,7 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
     };
 
     return (
-        <>
+        <div className={styles.productCardContainer}>
             <div className={`${styles.activeCardDescrBlock} ${isExpanded ? styles.expanded : styles.collapsed}`}>
                 <div className={styles.activeCardDescrText}>
                     <p className={styles.activeCardDescrTitle}>{title}</p>
@@ -34,7 +32,7 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
                         className={styles.expandButton}
                         onClick={toggleExpanded}
                     >
-                        {isExpanded ? 'Show Less' : 'Read More'}
+                        {isExpanded ? 'Show Less' : 'Read More...'}
                     </button>
                 </div>
 
@@ -64,6 +62,6 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
             </div>
 
             <hr className={styles.activeCardDivider} />
-        </>
+        </div>
     );
 };

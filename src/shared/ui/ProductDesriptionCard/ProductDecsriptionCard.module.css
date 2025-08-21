@@ -1,6 +1,10 @@
+.productCardContainer {
+    max-height: fit-content;
+}
+
 .activeCardDescrBlock {
     width: 90%;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,17 +23,16 @@
 }
 
 .activeCardDescrText {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    gap: 20px;
+    display: flex;
+    gap: 40px;
 }
 
 .activeCardDescrTitle {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 48px;
-    color: var(--color-beige);
+    color: var(--color-light-lavender);
     margin: 0;
 }
 
@@ -104,11 +107,12 @@
 
 .descriptionCollapsed {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 4.5em; /* approximately 3 lines */
+    max-height: 14.5em; /* 4.5em; approximately 3 lines */
 }
 
 .descriptionExpanded {
@@ -117,32 +121,32 @@
 }
 
 .expandButton {
-    background: var(--color-blue);
-    color: var(--color-beige);
+    background: none;
+    color: var(--color-light-lavender);
+    text-align: left;
+    text-decoration: underline;
     border: none;
-    padding: 8px 16px;
+    padding: 16px 0px;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
     font-family: var(--font-primary);
     font-size: 14px;
     transition: background-color 0.2s ease;
-}
-
-.expandButton:hover {
-    background: var(--color-light-blue);
+    margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {
     .activeCardDescrBlock {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
         text-align: center;
     }
 
     .activeCardDescrText {
-        align-items: start;
+        align-items: center;
+        gap: 5px;
     }
 
     .activeCardDescrTitle {
@@ -151,7 +155,7 @@
 
     .activeCardDescrDescription {
         font-size: 18px;
-        text-align: start;
+        text-align: center;
     }
 
     .activeCardDescrBlockPicture img,
@@ -160,21 +164,31 @@
     }
 
     .activeCardDescrBlockButtons {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        width: 90%;
     }
 
     .activeCardDescrBlockButtons a,
     .activeCardDescrBlockButtons button {
         width: 80%;
+        font-size: 20px;
     }
 
     .descriptionCollapsed {
-        max-height: 50px; /* 50px height when collapsed on mobile */
-        -webkit-line-clamp: 2;
+        max-height: 100px; 
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
     }
     
     .activeCardDescrBlock.collapsed {
         min-height: 50px;
+    }
+
+    .expandButton {
+        padding: 8px 0px;
+    }
+
+    .activeCardDivider {
+        margin-top: 20px;
     }
 }
