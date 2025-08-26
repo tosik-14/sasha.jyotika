@@ -20,21 +20,21 @@ export const SocialMediaLinksVertical = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Icon name={'instagram'} size={30} />
+                    <Icon name={'InstagramIcon'} size={30} />
                 </a>
                 <a
                     href="https://www.facebook.com/profile.php?id=61575674236195"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Icon name={'facebook'} size={30} />
+                    <Icon name={'FacebookIcon'} size={30} />
                 </a>
                 <a
                     href="https://t.me/alexandramikh"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Icon name={'telegram'} size={30} />
+                    <Icon name={'TelegramIcon'} size={30} />
                 </a>
             </div>
         </div>

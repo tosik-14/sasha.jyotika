@@ -1,7 +1,3 @@
-import globalPlanet from '@/shared/assets/icons/globalPlanet.svg';
-import telegram from '@/shared/assets/icons/telegram.png';
-import instagram from '@/shared/assets/icons/instagram.png';
-import facebook from '@/shared/assets/icons/facebook.png';
 import logoHomeScreen from '@/shared/assets/images/logo_homeScreen.jpg';
 import navigationBarLogo from '@/shared/assets/images/navigationBarLogo.png';
 import navigationBarLogo1 from '@/shared/assets/images/navigationBarLogo1.png';
@@ -9,7 +5,7 @@ import astro from '@/shared/assets/images/astro.jpg';
 import astroOfferDescr from '@/shared/assets/images/astroOfferDescr.png';
 import tarotOfferDescr from '@/shared/assets/images/tarotOfferDescr.png';
 import aromaOfferDescr from '@/shared/assets/images/aromaOfferDescr.png';
-import eventsOfferDescr from '@/shared/assets/images/eventsOfferDescr.png'
+import eventsOfferDescr from '@/shared/assets/images/eventsOfferDescr.png';
 import tarot from '@/shared/assets/images/tarot.png';
 import aroma from '@/shared/assets/images/aroma.png';
 import events from '@/shared/assets/images/events.jpg';
@@ -21,14 +17,18 @@ import moon6 from '@/shared/assets/patterns/moon6.png';
 import sashaAboutMe from '@/shared/assets/images/sasha_first.png';
 import sashaConnect from '@/shared/assets/images/sasha_second.png';
 import horizontalLogo from '@/shared/assets/images/horizontal_logo.png';
-import bannerImage from '@/shared/assets/images/banner.png'
+import bannerImage from '@/shared/assets/images/banner.png';
 
+import TelegramIcon from '@/shared/assets/icons/TelegramIcon';
+import InstagramIcon from '@/shared/assets/icons/InstagramIcon';
+import FacebookIcon from '@/shared/assets/icons/FacebookIcon';
+import GlobalPlanet from '@/shared/assets/icons/GlobalPlanet';
 
 export const iconMap = {
-    globalPlanet,
-    telegram,
-    instagram,
-    facebook,
+    GlobalPlanet,
+    TelegramIcon,
+    InstagramIcon,
+    FacebookIcon,
     logoHomeScreen,
     navigationBarLogo,
     navigationBarLogo1,

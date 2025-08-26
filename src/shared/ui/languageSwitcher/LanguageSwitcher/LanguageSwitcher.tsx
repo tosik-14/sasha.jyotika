@@ -15,7 +15,7 @@ export const LanguageSwitcher = () => {
                 onClick={() => setOpen(!open)}
                 className={styles.langSwitcherButton}
             >
-                <Icon name={'globalPlanet'} size={36} alr={'Language'} />
+                <Icon name={'GlobalPlanet'} size={36} />
             </button>
 
             {open && (

@@ -22,13 +22,17 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
 
     return (
         <div className={styles.productCardContainer}>
-            <div className={`${styles.activeCardDescrBlock} ${isExpanded ? styles.expanded : styles.collapsed}`}>
+            <div
+                className={`${styles.activeCardDescrBlock} ${isExpanded ? styles.expanded : styles.collapsed}`}
+            >
                 <div className={styles.activeCardDescrText}>
                     <p className={styles.activeCardDescrTitle}>{title}</p>
-                    <p className={`${styles.activeCardDescrDescription} ${isExpanded ? styles.descriptionExpanded : styles.descriptionCollapsed}`}>
+                    <p
+                        className={`${styles.activeCardDescrDescription} ${isExpanded ? styles.descriptionExpanded : styles.descriptionCollapsed}`}
+                    >
                         {description}
                     </p>
-                    <button 
+                    <button
                         className={styles.expandButton}
                         onClick={toggleExpanded}
                     >
@@ -48,7 +52,7 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
                             rel="noopener noreferrer"
                         >
                             <p>Message</p>
-                            <Icon name={'instagram'} size={25} />
+                            <Icon name={'InstagramIcon'} size={25} />
                         </a>
                         <button
                             onClick={() => {
