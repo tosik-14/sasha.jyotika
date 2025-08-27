@@ -6,13 +6,13 @@ import { ProductDescriptionCard } from '@/shared/ui/ProductDesriptionCard/Produc
 const eventsProducts: Product[] = [
     {
         id: 1,
-        image: 'eventsOfferDescr',
+        image: 'eventsWorkshops',
         title: 'eventsProductTitle1',
         description: 'eventsProductDescription1',
     },
     {
         id: 2,
-        image: 'eventsOfferDescr',
+        image: 'eventsEntertainment',
         title: 'eventsProductTitle2',
         description: 'eventsProductDescription2',
     },
@@ -24,12 +24,13 @@ export const EventsDescription = () => {
     return (
         <div className={styles.container}>
             <div className={styles.productsGrid}>
-                {eventsProducts.map((product) => (
+                {eventsProducts.map((product, idx) => (
                     <ProductDescriptionCard
                         key={product.id}
                         image={product.image}
                         title={t(product.title)}
                         description={t(product.description)}
+                        imageLeft={idx % 2 === 1} // odd items: image on the left
                     />
                 ))}
             </div>

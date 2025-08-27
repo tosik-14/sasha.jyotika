@@ -6,7 +6,7 @@ import type { Product } from '@/features/offersDescriptions/AstroDescription/Ast
 const aromadiagnosticsProducts: Product[] = [
     {
         id: 1,
-        image: 'aromaOfferDescr',
+        image: 'aromaDiagnostics',
         title: 'aromaProductTitle1',
         description: 'aromaProductDescription1',
     },

@@ -83,6 +83,7 @@
     .aboutMePhoto img {
         width: clamp(200px, 50%, 414px);
         height: auto;
+        max-width: 350px;
     }
 
     .aboutMeTextContent {

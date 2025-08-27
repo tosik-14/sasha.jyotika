@@ -32,6 +32,10 @@ import astroYourQuestion from '@/shared/assets/images/astro_your_question.png'
 import astroSolar from '@/shared/assets/images/astro_solar.png'
 import astroPrashna from '@/shared/assets/images/astro_prashna.png'
 import astroStringArt from '@/shared/assets/images/astro_stringart.jpg'
+import tarotDreamwork from '@/shared/assets/images/tarot_dreamwork.png'
+import aromaDiagnostics from '@/shared/assets/images/aroma_diagnostics.png'
+import eventsWorkshops from '@/shared/assets/images/events_workshops.png'
+import eventsEntertainment from '@/shared/assets/images/events_entertainment.png'
 
 export const iconMap = {
     GlobalPlanet,
@@ -66,6 +70,10 @@ export const iconMap = {
     astroSolar,
     astroPrashna,
     astroStringArt,
+    tarotDreamwork,
+    aromaDiagnostics,
+    eventsWorkshops,
+    eventsEntertainment,
 } as const;
 
 export type IconName = keyof typeof iconMap;

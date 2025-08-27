@@ -6,7 +6,7 @@ import { ProductDescriptionCard } from '@/shared/ui/ProductDesriptionCard/Produc
 const tarotProducts: Product[] = [
     {
         id: 1,
-        image: 'tarotOfferDescr',
+        image: 'tarotDreamwork',
         title: 'tarotProductTitle1',
         description: 'tarotProductDescription1',
     },
@@ -24,12 +24,13 @@ export const TarotDescription = () => {
     return (
         <div className={styles.container}>
             <div className={styles.productsGrid}>
-                {tarotProducts.map((product) => (
+                {tarotProducts.map((product, idx) => (
                     <ProductDescriptionCard
                         key={product.id}
                         image={product.image}
                         title={t(product.title)}
                         description={t(product.description)}
+                        imageLeft={idx % 2 === 1} // odd items: image on the left
                     />
                 ))}
             </div>
