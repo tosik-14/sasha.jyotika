@@ -25,7 +25,7 @@ export const WhatDoIOffer = () => {
                     }}
                 >
                     <Icon
-                        name={'astro'}
+                        name={'astroCategory'}
                         size={[246, 316]}
                     />
                     <div className={styles.offerCardCover}>
@@ -78,7 +78,7 @@ export const WhatDoIOffer = () => {
                     }}
                 >
                     <Icon
-                        name={'events'}
+                        name={'eventsCategory'}
                         size={[246, 316]}
                     />
                     <div className={styles.offerCardCover}>

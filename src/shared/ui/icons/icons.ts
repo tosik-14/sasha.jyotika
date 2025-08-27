@@ -24,6 +24,15 @@ import InstagramIcon from '@/shared/assets/icons/InstagramIcon';
 import FacebookIcon from '@/shared/assets/icons/FacebookIcon';
 import GlobalPlanet from '@/shared/assets/icons/GlobalPlanet';
 
+import astroCategory from '@/shared/assets/images/astrology_category.png'
+import eventsCategory from '@/shared/assets/images/events_category.png'
+import astroBirthChart from '@/shared/assets/images/astro_birth_chart.png'
+import astroYearForecast from '@/shared/assets/images/astro_year_forecast.png'
+import astroYourQuestion from '@/shared/assets/images/astro_your_question.png'
+import astroSolar from '@/shared/assets/images/astro_solar.png'
+import astroPrashna from '@/shared/assets/images/astro_prashna.png'
+import astroStringArt from '@/shared/assets/images/astro_stringart.jpg'
+
 export const iconMap = {
     GlobalPlanet,
     TelegramIcon,
@@ -49,6 +58,14 @@ export const iconMap = {
     sashaConnect,
     horizontalLogo,
     bannerImage,
+    astroCategory,
+    eventsCategory,
+    astroBirthChart,
+    astroYearForecast,
+    astroYourQuestion,
+    astroSolar,
+    astroPrashna,
+    astroStringArt,
 } as const;
 
 export type IconName = keyof typeof iconMap;
