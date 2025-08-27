@@ -54,12 +54,13 @@ export const AstroDescription = () => {
     return (
         <div className={styles.container}>
             <div className={styles.productsGrid}>
-                {astroProducts.map((product) => (
+                {astroProducts.map((product, idx) => (
                     <ProductDescriptionCard
                         key={product.id}
                         image={product.image}
                         title={t(product.title)}
                         description={t(product.description)}
+                        imageLeft={idx % 2 === 1} // odd items: image on the left
                     />
                 ))}
             </div>
