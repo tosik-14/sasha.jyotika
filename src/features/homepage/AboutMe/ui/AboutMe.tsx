@@ -13,7 +13,7 @@ export const AboutMe = () => {
             </p>
             <div className={styles.aboutMeContent}>
                 <span className={styles.aboutMePhoto}>
-                    <Icon name={'sashaAboutMe'} size={[414, 532]} />
+                    <Icon name={'aboutMePic'} size={[424, 532]} />
                 </span>
 
                 <div className={styles.aboutMeTextContent}>

@@ -36,6 +36,7 @@ import tarotDreamwork from '@/shared/assets/images/tarot_dreamwork.png'
 import aromaDiagnostics from '@/shared/assets/images/aroma_diagnostics.png'
 import eventsWorkshops from '@/shared/assets/images/events_workshops.png'
 import eventsEntertainment from '@/shared/assets/images/events_entertainment.png'
+import aboutMePic from '@/shared/assets/images/about_me.png'
 
 export const iconMap = {
     GlobalPlanet,
@@ -74,6 +75,7 @@ export const iconMap = {
     aromaDiagnostics,
     eventsWorkshops,
     eventsEntertainment,
+    aboutMePic,
 } as const;
 
 export type IconName = keyof typeof iconMap;
