@@ -136,6 +136,9 @@
     margin-bottom: 0px;
 }
 
+.activeCardDescrBlock { display: flex; }
+.imageLeft { flex-direction: row-reverse; }
+
 @media (max-width: 768px) {
     .activeCardDescrBlock {
         flex-direction: column-reverse;
@@ -191,4 +194,7 @@
     .activeCardDivider {
         margin-top: 20px;
     }
+
+    .activeCardDescrBlock,
+    .imageLeft { flex-direction: column; } /* stack on mobile */
 }

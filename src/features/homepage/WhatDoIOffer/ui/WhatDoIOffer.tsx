@@ -23,7 +23,7 @@ export const WhatDoIOffer = () => {
                         navigate('/offerDescription/astro');
                     }}
                 >
-                    <Icon name={'astro'} size={[246, 316]} />
+                    <Icon name={'astroCategory'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Vedic</label>
@@ -67,7 +67,7 @@ export const WhatDoIOffer = () => {
                         navigate('/offerDescription/events');
                     }}
                 >
-                    <Icon name={'events'} size={[246, 316]} />
+                    <Icon name={'eventsCategory'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Events</label>

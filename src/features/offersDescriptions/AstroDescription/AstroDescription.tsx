@@ -12,37 +12,37 @@ export interface Product {
 const astroProducts: Product[] = [
     {
         id: 1,
-        image: 'astroOfferDescr',
+        image: 'astroBirthChart',
         title: 'astroProductTitle1',
         description: 'astroProductDescription1',
     },
     {
         id: 2,
-        image: 'astroOfferDescr',
+        image: 'astroYearForecast',
         title: 'astroProductTitle2',
         description: 'astroProductDescription2',
     },
     {
         id: 3,
-        image: 'astroOfferDescr',
+        image: 'astroYourQuestion',
         title: 'astroProductTitle3',
         description: 'astroProductDescription3',
     },
     {
         id: 4,
-        image: 'astroOfferDescr',
+        image: 'astroSolar',
         title: 'astroProductTitle4',
         description: 'astroProductDescription4',
     },
     {
-        id: 4,
-        image: 'astroOfferDescr',
+        id: 5,
+        image: 'astroPrashna',
         title: 'astroProductTitle5',
         description: 'astroProductDescription5',
     },
     {
-        id: 4,
-        image: 'astroOfferDescr',
+        id: 6,
+        image: 'astroStringArt',
         title: 'astroProductTitle6',
         description: 'astroProductDescription6',
     },
@@ -54,12 +54,13 @@ export const AstroDescription = () => {
     return (
         <div className={styles.container}>
             <div className={styles.productsGrid}>
-                {astroProducts.map((product) => (
+                {astroProducts.map((product, idx) => (
                     <ProductDescriptionCard
                         key={product.id}
                         image={product.image}
                         title={t(product.title)}
                         description={t(product.description)}
+                        imageLeft={idx % 2 === 1} // odd items: image on the left
                     />
                 ))}
             </div>

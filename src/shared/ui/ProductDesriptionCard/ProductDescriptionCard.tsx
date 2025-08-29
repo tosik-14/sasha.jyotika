@@ -7,13 +7,10 @@ interface ProductDescriptionProps {
     image: string;
     title: string;
     description: string;
+    imageLeft?: boolean;
 }
 
-export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
-    image,
-    title,
-    description,
-}) => {
+export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({ image, title, description, imageLeft }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpanded = () => {
@@ -23,7 +20,7 @@ export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
     return (
         <div className={styles.productCardContainer}>
             <div
-                className={`${styles.activeCardDescrBlock} ${isExpanded ? styles.expanded : styles.collapsed}`}
+                className={`${styles.activeCardDescrBlock} ${isExpanded ? styles.expanded : styles.collapsed} ${imageLeft ? styles.imageLeft : ''}`}
             >
                 <div className={styles.activeCardDescrText}>
                     <p className={styles.activeCardDescrTitle}>{title}</p>
