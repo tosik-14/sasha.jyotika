@@ -10,9 +10,7 @@ export const LetsConnect = () => {
 
     return (
         <div className={styles.connectContent}>
-            <p className={styles.sectionTitle}>
-                {t('letsConnect')}
-            </p>
+            <p className={styles.sectionTitle}>{t('letsConnect')}</p>
             <p className={styles.paragraphSomeText}>{t('lestConnectPhrase')}</p>
 
             <div className={styles.connectBlock}>
@@ -41,6 +39,11 @@ export const LetsConnect = () => {
                         {success && (
                             <p className={styles.gratitudeText}>
                                 {t('thankYou')}
+                            </p>
+                        )}
+                        {success === null && (
+                            <p className={styles.gratitudeText}>
+                                {t('oopsError')}
                             </p>
                         )}
                     </div>
