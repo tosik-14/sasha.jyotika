@@ -1,9 +1,4 @@
-//import { IconInterface } from '@/shared/assets/icons/IconPropsInterface';
-export interface IconInterface {
-    width?: number;
-    height?: number;
-    color?: string;
-}
+import type { IconInterface } from '@/shared/assets/icons/entity/types';
 
 const InstagramIcon = ({
     width,

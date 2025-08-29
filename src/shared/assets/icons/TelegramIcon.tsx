@@ -1,16 +1,10 @@
-//import { IconPropsInterface } from '@/shared/assets/icons/interface/IconPropsInterface';
-
-export interface IconPropsInterface {
-    width?: number;
-    height?: number;
-    color?: string;
-}
+import type { IconInterface } from '@/shared/assets/icons/entity/types';
 
 const TelegramIcon = ({
     width,
     height,
     color = 'var(--color-beige)',
-}: IconPropsInterface) => (
+}: IconInterface) => (
     <svg
         width={width}
         height={height}
