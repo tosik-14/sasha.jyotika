@@ -14,16 +14,20 @@ export const NavigationBoard = () => {
             <button
                 onClick={() => {
                     if (location.pathname === '/') {
-                        window.scrollTo({top: 0, behavior: 'smooth'})
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                     } else {
                         navigate('/', { state: { scrollTo: 'services' } });
                     }
                 }}
             >
-            <span className={styles.logoStack}>
-                <Icon name={'moon4'} className={styles.logoBackground}/>
-                <Icon name={'horizontalLogo'} size={310} className={styles.logoOverlay} />
-            </span>
+                <span className={styles.logoStack}>
+                    <Icon name={'moon4'} className={styles.logoBackground} />
+                    <Icon
+                        name={'horizontalLogo'}
+                        size={310}
+                        className={styles.logoOverlay}
+                    />
+                </span>
             </button>
 
             <span className={styles.socialMediaLinks}>
@@ -34,8 +38,10 @@ export const NavigationBoard = () => {
                 <button
                     onClick={() => {
                         if (location.pathname === '/') {
-                            scrollToElement('aboutMeForNavigation');
+                            console.log('navigate without state');
+                            //scrollToElement('aboutMeForNavigation');
                         } else {
+                            console.log('navigate with state');
                             navigate('/', {
                                 state: { scrollTo: 'aboutMeForNavigation' },
                             });

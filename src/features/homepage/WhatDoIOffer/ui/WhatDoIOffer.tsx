@@ -9,9 +9,7 @@ export const WhatDoIOffer = () => {
 
     return (
         <div className={styles.whatDoIOffer}>
-            <p className={styles.sectionTitle}>
-                {t('whatDoIOffer')}
-            </p>
+            <p className={styles.sectionTitle}>{t('whatDoIOffer')}</p>
             <div className={styles.myOffersExploreText}>
                 <p className={styles.paragraphSomeText}>
                     {t('whatDoIOfferExplore')}
@@ -21,13 +19,11 @@ export const WhatDoIOffer = () => {
                 <button
                     className={styles.offerCard}
                     onClick={() => {
+                        console.log('ASSAAASASSSTROOOO');
                         navigate('/offerDescription/astro');
                     }}
                 >
-                    <Icon
-                        name={'astro'}
-                        size={[246, 316]}
-                    />
+                    <Icon name={'astro'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Vedic</label>
@@ -42,10 +38,7 @@ export const WhatDoIOffer = () => {
                         navigate('/offerDescription/tarot');
                     }}
                 >
-                    <Icon
-                        name={'tarot'}
-                        size={[246, 316]}
-                    />
+                    <Icon name={'tarot'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Tarot</label>
@@ -59,10 +52,7 @@ export const WhatDoIOffer = () => {
                         navigate('/offerDescription/aroma');
                     }}
                 >
-                    <Icon
-                        name={'aroma'}
-                        size={[246, 316]}
-                    />
+                    <Icon name={'aroma'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Aroma</label>
@@ -77,10 +67,7 @@ export const WhatDoIOffer = () => {
                         navigate('/offerDescription/events');
                     }}
                 >
-                    <Icon
-                        name={'events'}
-                        size={[246, 316]}
-                    />
+                    <Icon name={'events'} size={[246, 316]} />
                     <div className={styles.offerCardCover}>
                         <span>
                             <label>Events</label>

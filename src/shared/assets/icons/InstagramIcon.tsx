@@ -1,4 +1,5 @@
-interface iconProps {
+//import { IconInterface } from '@/shared/assets/icons/IconPropsInterface';
+export interface IconInterface {
     width?: number;
     height?: number;
     color?: string;
@@ -8,7 +9,7 @@ const InstagramIcon = ({
     width,
     height,
     color = 'var(--color-beige)',
-}: iconProps) => (
+}: IconInterface) => (
     <svg
         width={width}
         height={height}
@@ -16,7 +17,7 @@ const InstagramIcon = ({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <g clip-path="url(#clip0_37_296)">
+        <g clipPath="url(#clip0_37_296)">
             <path
                 d="M0 80L4.19629e-06 176C6.12728e-06 220.176 35.824 256 80 256H176C220.176 256 256 220.176 256 176V80C256 35.824 220.176 -1.93098e-06 176 0L80 4.19627e-06C35.824 6.12728e-06 -1.93103e-06 35.824 0 80ZM176 24C206.88 24 232 49.12 232 80V176C232 206.88 206.88 232 176 232H80C49.12 232 24 206.88 24 176V80C24 49.12 49.12 24 80 24H176Z"
                 fill={color}

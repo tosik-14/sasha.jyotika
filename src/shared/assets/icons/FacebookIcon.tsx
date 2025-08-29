@@ -1,4 +1,5 @@
-interface iconProps {
+//import { IconInterface } from '@/shared/assets/icons/IconPropsInterface';
+export interface IconInterface {
     width?: number;
     height?: number;
     color?: string;
@@ -8,7 +9,7 @@ const FacebookIcon = ({
     width,
     height,
     color = 'var(--color-beige)',
-}: iconProps) => (
+}: IconInterface) => (
     <svg
         width={width}
         height={height}
@@ -16,7 +17,7 @@ const FacebookIcon = ({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <g clip-path="url(#clip0_37_300)">
+        <g clipPath="url(#clip0_37_300)">
             <path
                 d="M218.5 0H37.5C16.8242 0 0 16.8242 0 37.5V218.5C0 239.176 16.8242 256 37.5 256H113V165.5H83V120.5H113V90.0002C113 65.1855 133.186 45 158 45H203.5V90.0002H158V120.5H203.5L196 165.5H158V256H218.5C239.176 256 256 239.176 256 218.5V37.5C256 16.8242 239.176 0 218.5 0Z"
                 fill={color}

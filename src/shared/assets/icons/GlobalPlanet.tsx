@@ -1,4 +1,5 @@
-interface iconProps {
+//import { IconInterface } from '@/shared/assets/icons/IconPropsInterface';
+export interface IconInterface {
     width?: number;
     height?: number;
     color?: string;
@@ -8,7 +9,7 @@ const GlobalPlanet = ({
     width,
     height,
     color = 'var(--color-beige)',
-}: iconProps) => (
+}: IconInterface) => (
     <svg
         width={width}
         height={height}
@@ -16,18 +17,18 @@ const GlobalPlanet = ({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <g clip-path="url(#clip0_36_267)">
+        <g clipPath="url(#clip0_36_267)">
             <circle
                 cx="128"
                 cy="128"
                 r="120.5"
                 stroke={color}
-                stroke-width="15"
+                strokeWidth="15"
             />
             <path
                 d="M128 7.5C139.598 7.5 152.485 18.0165 162.908 40.6299C173.036 62.6028 179.5 93.4854 179.5 128C179.5 162.515 173.036 193.397 162.908 215.37C152.485 237.984 139.598 248.5 128 248.5C116.402 248.5 103.515 237.984 93.0918 215.37C82.9636 193.397 76.5 162.515 76.5 128C76.5 93.4854 82.9636 62.6028 93.0918 40.6299C103.515 18.0165 116.402 7.5 128 7.5Z"
                 stroke={color}
-                stroke-width="15"
+                strokeWidth="15"
             />
             <rect
                 x="251"
