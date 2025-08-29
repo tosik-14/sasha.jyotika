@@ -19,7 +19,6 @@ export const WhatDoIOffer = () => {
                 <button
                     className={styles.offerCard}
                     onClick={() => {
-                        console.log('ASSAAASASSSTROOOO');
                         navigate('/offerDescription/astro');
                     }}
                 >
