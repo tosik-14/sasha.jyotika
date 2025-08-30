@@ -38,10 +38,8 @@ export const NavigationBoard = () => {
                 <button
                     onClick={() => {
                         if (location.pathname === '/') {
-                            console.log('navigate without state');
-                            //scrollToElement('aboutMeForNavigation');
+                            scrollToElement('aboutMeForNavigation');
                         } else {
-                            console.log('navigate with state');
                             navigate('/', {
                                 state: { scrollTo: 'aboutMeForNavigation' },
                             });
