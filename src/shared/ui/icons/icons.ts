@@ -8,12 +8,13 @@ import aromaOfferDescr from '@/shared/assets/images/aromaOfferDescr.png';
 import eventsOfferDescr from '@/shared/assets/images/eventsOfferDescr.png';
 import tarot from '@/shared/assets/images/tarot.png';
 import aroma from '@/shared/assets/images/aroma.png';
-import events from '@/shared/assets/images/events.jpg';
 import moon1 from '@/shared/assets/patterns/moon1.png';
 import moon2 from '@/shared/assets/patterns/moon2.png';
 import moon3 from '@/shared/assets/patterns/moon3.png';
 import moon4 from '@/shared/assets/patterns/moon4.png';
 import moon6 from '@/shared/assets/patterns/moon6.png';
+import moon7 from '@/shared/assets/patterns/moon7.png';
+import moon8 from '@/shared/assets/patterns/moon8.png';
 import sashaAboutMe from '@/shared/assets/images/sasha_first.png';
 import sashaConnect from '@/shared/assets/images/sasha_second.png';
 import horizontalLogo from '@/shared/assets/images/horizontal_logo.png';
@@ -53,12 +54,13 @@ export const iconMap = {
     eventsOfferDescr,
     tarot,
     aroma,
-    events,
     moon1,
     moon2,
     moon3,
     moon4,
     moon6,
+    moon7,
+    moon8,
     sashaAboutMe,
     sashaConnect,
     horizontalLogo,

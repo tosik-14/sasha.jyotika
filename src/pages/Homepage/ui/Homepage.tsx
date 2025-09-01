@@ -22,9 +22,9 @@ export const Homepage = () => {
             <div className={styles.languageSwitcher}>
                 <LanguageSwitcher />
             </div>
-
+            
             <div className={styles.contentContainer}>
-                <NavigationBoard />
+            <NavigationBoard />
                 <section id="banner" className={styles.section}>
                     <HomeScreen />
                 </section>
@@ -50,7 +50,7 @@ export const Homepage = () => {
                     <AboutMe />
 
                     <div className={styles.moonPattern3}>
-                        <Icon name={'moon3'} size={300} />
+                        <Icon name={'moon3'} size={650} />
                     </div>
                 </section>
 
@@ -58,7 +58,7 @@ export const Homepage = () => {
                     <LetsConnect />
 
                     <div className={styles.moonPattern5}>
-                        <Icon name={'moon2'} size={230} />
+                        <Icon name={'moon8'} size={600} />
                     </div>
                     <div className={styles.moonPattern6}>
                         <Icon name={'moon1'} size={240} />
@@ -67,7 +67,6 @@ export const Homepage = () => {
                         <Icon name={'moon3'} size={350} />
                     </div>
                 </section>
-
                 <Footer />
             </div>
         </div>
