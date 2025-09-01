@@ -2,6 +2,7 @@ import styles from '@/shared/ui/ProductDesriptionCard/ProductDecsriptionCard.mod
 import { Icon } from '@/shared/ui/icons/Icon';
 import { scrollToElement } from '@/shared/lib/scrollToElement';
 import { useState } from 'react';
+import type { IconName } from '@/shared/ui/icons/icons';
 
 interface ProductDescriptionProps {
     image: string;
@@ -10,7 +11,12 @@ interface ProductDescriptionProps {
     imageLeft?: boolean;
 }
 
-export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({ image, title, description, imageLeft }) => {
+export const ProductDescriptionCard: React.FC<ProductDescriptionProps> = ({
+    image,
+    title,
+    description,
+    imageLeft,
+}) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpanded = () => {

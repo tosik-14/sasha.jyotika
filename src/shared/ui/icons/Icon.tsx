@@ -36,6 +36,9 @@ export const Icon: React.FC<IconProps> = ({
         );
     }
 
+    const w = width !== undefined ? String(width) : undefined;
+    const h = height !== undefined ? String(height) : undefined;
     const IconComponent = src;
-    return <IconComponent width={width} height={height} {...rest} />;
+
+    return <IconComponent width={w} height={h} {...rest} />;
 };

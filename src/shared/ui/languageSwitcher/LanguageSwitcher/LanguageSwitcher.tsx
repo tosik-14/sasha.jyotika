@@ -1,11 +1,9 @@
-import { useTranslation } from 'react-i18next';
 import styles from '@/shared/ui/languageSwitcher/LanguageSwitcher/LanguageSwitcher.module.css';
 import { useLanguageSwitcher } from '@/shared/ui/languageSwitcher/LanguageSwitcher/useLanguageSwitcher';
 import { languages } from '@/shared/ui/languageSwitcher/entities/languages';
 import { Icon } from '@/shared/ui/icons/Icon';
 
 export const LanguageSwitcher = () => {
-    const { i18n } = useTranslation();
     const { changeLanguage, setOpen, open, switcherRef } =
         useLanguageSwitcher();
 
