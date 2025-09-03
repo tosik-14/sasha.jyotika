@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - npm run build
+    - /bin/cd dist
+    - export DEPLOYPATH=/home/m603953/test_deploy/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp favicon.svg $DEPLOYPATH
+    - /bin/mkdir -p $DEPLOYPATH/assets/
+    - /bin/rm -rf -f $DEPLOYPATH/assets/* | echo y
+    - /bin/cp assets/* $DEPLOYPATH/assets/
