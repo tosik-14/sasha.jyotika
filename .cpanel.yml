@@ -3,7 +3,7 @@ deployment:
   tasks:
     - npm run build
     - /bin/cd dist
-    - export DEPLOYPATH=/home/m603953/test_deploy/
+    - export DEPLOYPATH=/home2/m603953/test_deploy/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp favicon.svg $DEPLOYPATH
     - /bin/mkdir -p $DEPLOYPATH/assets/
