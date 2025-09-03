@@ -16,7 +16,7 @@ export const NavigationBoard = () => {
                     if (location.pathname === '/') {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     } else {
-                        navigate('/', { state: { scrollTo: 'services' } });
+                        navigate('/');
                     }
                 }}
             >
